@@ -30,7 +30,7 @@
       </nav>
     </div>
   </header>
-  <main class="catalog">
+  <main class="page-main catalog">
     <div class="container-center">
       <h2 class="catalog__title">
         Каталог продукции
@@ -39,34 +39,36 @@
         <h3 class="visually-hidden">
           Основные товары
         </h3>
-        <ul class="main-products__list">
-          <li class="main-products__item">
-            <a class="main-products__img-link" href="#">
-              <img class="main-products__img" src="img/name.svg" alt="Cat Energy PRO 500 г" width="140" height="144">
-            </a>
-            <a class="main-products__title-link" href="#">
-              <h3 class="main-products__title">
-                Cat Energy
-                PRO 500 г
-              </h3>
-            </a>
-            <table class="main-products__table">
-              <tr class="main-products__table-row">
-                <td>Объем</td>
-                <td>500 &nbspг</td>
-              </tr>
-              <tr class="main-products__table-row">
-                <td>Вкус</td>
-                <td>Курица</td>
-              </tr>
-              <tr class="main-products__table-row">
-                <td>Цена</td>
-                <td>700 &nbspР</td>
-              </tr>
-            </table>
-            <a class="button main-products__button" href="form.html">
-              Заказать
-            </a>
+        <ul class="catalog__main-list">
+          <li class="catalog__main-item">
+            <article class="catalog__article main-good">
+              <a class="main-good__img-link" href="#">
+                <img src="img/name.svg" alt="Cat Energy PRO 500 г" width="140" height="144">
+              </a>
+              <a class="main-good__title-link" href="#">
+                <h3 class="main-good__title">
+                  Cat Energy
+                  PRO 500 г
+                </h3>
+              </a>
+              <table class="main-good__table">
+                <tr class="main-good__table-row">
+                  <td>Объем</td>
+                  <td>500 &nbspг</td>
+                </tr>
+                <tr class="main-good__table-row">
+                  <td>Вкус</td>
+                  <td>Курица</td>
+                </tr>
+                <tr class="main-good__table-row">
+                  <td>Цена</td>
+                  <td>700 &nbspР</td>
+                </tr>
+              </table>
+              <a class="button" href="form.html">
+                Заказать
+              </a>
+            </article>
           </li>
           <li class="main-products__item">
             <a class="main-products__img-link" href="#">
@@ -237,9 +239,9 @@
             </a>
           </li>
         </ul>
-        <b class="main-products__more">Показать еще 100500 товаров</b>
-        <p class="main-products__desc">На самом деле вкусов гораздо больше!</p>
-        <a class="button button--gray main-products__button" href="#">Показать все</a>
+        <p class="catalog__more">Показать еще 100500 товаров</p>
+        <p class="catalog__more-desc">На самом деле вкусов гораздо больше!</p>
+        <a class="button button--gray" href="#">Показать все</a>
       </section>
       <section class="additional-products">
         <h3 class="additional-products__title">
@@ -248,7 +250,7 @@
         <ul class="additional-products__list">
           <li class="additional-products__item">
             <a class="additional-products__title-link" href="#">
-              <h3 class="additional-products__title">
+              <h3 class="additional-products__name">
                 Сахарозаменитель
               </h3>
             </a>
@@ -260,13 +262,13 @@
                 200 Р.
               </p>
             </div>
-            <a class="button additional-products__button" href="form.html">
+            <a class="button" href="form.html">
               Заказать
             </a>
           </li>
           <li class="additional-products__item">
             <a class="additional-products__title-link" href="#">
-              <h3 class="additional-products__title">
+              <h3 class="additional-products__name">
                 Питьевая вода
               </h3>
             </a>
@@ -321,7 +323,7 @@
         </ul>
       </section>
       <div class="catalog__event">
-        <p class="event__desc">
+        <p class="catalog__event-desc">
           Закажите все
           и получите чехол для кота в подарок!
         </p>

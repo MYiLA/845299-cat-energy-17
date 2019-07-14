@@ -12,13 +12,16 @@
     <div class="container-center">
       <nav class="main-nav">
         <a class="page-header__logo" href="#">
+<!-- На главной странице в логотипе не должно быть ссылки -->
           <img class="page-header__logo-image" src="img/name.svg" alt="Логотип «Cat Energy»" width="191" height="39">
         </a>
-        <button class="burger-menu" type="button" aria-label="показать меню"></button>
+        <button class="main-nav__btn-close" type="button" aria-label="показать меню"></button>
+<!-- Закрытие и открытие - это одна кнопка -->
         <button class="button-close" type="button" aria-label="Закрыть меню"></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="#">Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+<!-- На главной странице не должно быть ссылки на главную-->
+            <a href="#" class="main-nav__link">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="catalog.html">Каталог продукции</a>
@@ -40,6 +43,7 @@
           питание для котов
         </h2>
         <b class="promo__slogan">
+<!-- strong -->
           Занялся собой? Займись котом!
         </b>
         <img class="promo__img" src="img/name.svg" alt="Cat Energy с курицей" width="280" height="270">
@@ -50,7 +54,7 @@
       <section class="targets">
         <h2 class="visually-hidden">Цели Вашего кота</h2>
         <div class="targets__container">
-          <h3 class="targets__title">
+          <h3 class="targets__title targets__title--slim">
             Похудение
           </h3>
           <p class="targets__desc">
@@ -65,7 +69,7 @@
           </a>
         </div>
         <div class="targets__container">
-          <h3 class="targets__title">
+          <h3 class="targets__title targets__title--fat">
             Набор массы
           </h3>
           <p class="targets__desc">
@@ -80,8 +84,10 @@
           </a>
         </div>
       </section class="advantages">
-      <h2 class="visually-hidden">Преимущества нашей продукции</h2>
+      <!-- <h2 class="visually-hidden">Преимущества нашей продукции</h2> -->
+      <h2 class="advantages__title">Как это работает</h2>
       <b class="advantages__title">
+<!-- strong -->
         Как это работает
       </b>
       <ul class="advantages__list">
@@ -118,19 +124,19 @@
         </p>
         <div class="before-after__container">
           <div class="before-after__table">
-            <b class="before-after__table--large">
+            <p class="before-after__descr">
               5 кг
-            </b>
-            <p class="before-after__table--small">
+            </p>
+            <p class="before-after__sub-descr">
               снижение
               веса
             </p>
           </div>
           <div class="before-after__table">
-            <b class="before-after__table--large">
+            <p class="before-after__descr">
               60 дней
-            </b>
-            <p class="before-after__table--small">
+            </p>
+            <p class="before-after__sub-descr">
               затрачено
               времени
             </p>
@@ -138,14 +144,18 @@
         </div>
         <p class="before-after__price">Затраты на питание: 15 000 руб.</p>
         <div class="before-after__slider">
-          <img class="slider-item__before" src="img/name.svg" alt="Кот толстый" width="311" height="232">
-          <img class="slider-item__after" src="img/name.svg" alt="Кот худой" width="251" height="240">
+          <figure class="before-after__img before-after__img--before">
+            <img src="img/name.svg" alt="Кот толстый" width="311" height="232">
+          </figure>
+          <figure class="before-after__img before-after__img--after">
+            <img src="img/name.svg" alt="Кот худой" width="251" height="240">
+          </figure>
         </div>
         <input class="visually-hidden" type="radio" id="before" name="toggle-slider" checked>
         <input class="visually-hidden" type="radio" id="after" name="toggle-slider">
         <div class="before-after__controls">
-          <label class="controls-before" for="before">Было</label>
-          <label class="controls-after" for="after">Стало</label>
+          <label class="before-after__controls-item" for="before">Было</label>
+          <label class="before-after__controls-item" for="after">Стало</label>
         </div>
         </ul>
       </section>
@@ -166,12 +176,16 @@
           Санкт-Петербург
         </address>
       </div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6232930776794!2d30.324084461234516!3d59.9386270406439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1563040569440!5m2!1sru!2sru"
-        width="100%" height="363" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="contacts__map">
+        <img src="" alt="" class="contacts__map-img">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6232930776794!2d30.324084461234516!3d59.9386270406439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1563040569440!5m2!1sru!2sru"
+          width="100%" height="363" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
     </section>
     <div class="container-center">
-      <a class="logo page-footer__logo" href="#">
+      <a class="page-footer__logo" href="#">
         <img src="img/name.svg" alt="Логотип «Cat Energy»" width="128" height="24">
       </a>
       <ul class="social">
@@ -188,7 +202,7 @@
               width="10" height="19"></a>
         </li>
       </ul>
-      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+      <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         HTML Academy
         <img src="img/fb.svg" alt="логотип HTML Academy" width="27" height="34">
       </a>
