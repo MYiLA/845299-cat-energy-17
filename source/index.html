@@ -8,52 +8,46 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="container-center">
-      <nav class="main-nav">
-        <a class="page-header__logo" href="#">
-<!-- На главной странице в логотипе не должно быть ссылки -->
-          <img class="page-header__logo-image" src="img/name.svg" alt="Логотип «Cat Energy»" width="191" height="39">
+  <header class="header">
+    <div class="wrap">
+      <nav class="nav">
+        <a class="nav__logo">
+          <img src="img/name.svg" alt="Логотип «Cat Energy»" width="191" height="39">
         </a>
-        <button class="main-nav__btn-close" type="button" aria-label="показать меню"></button>
-<!-- Закрытие и открытие - это одна кнопка -->
-        <button class="button-close" type="button" aria-label="Закрыть меню"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-<!-- На главной странице не должно быть ссылки на главную-->
-            <a href="#" class="main-nav__link">Главная</a>
+        <button class="nav__menu-btn" type="button" aria-label="показать или закрыть меню"></button>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </div>
-
   </header>
-  <main class="page-main">
+  <main class="main">
     <h1 class="visually-hidden">Магазин "Cat Energy" питание для котов </h1>
     <section class="promo">
-      <div class="container-center">
+      <div class="wrap">
         <h2 class="promo__title">
           Функциональное
           питание для котов
         </h2>
-        <b class="promo__slogan">
-<!-- strong -->
+        <strong class="promo__slogan">
           Занялся собой? Займись котом!
-        </b>
+        </strong>
         <img class="promo__img" src="img/name.svg" alt="Cat Energy с курицей" width="280" height="270">
-        <a class="button promo__button" href="form.html">Подобрать программу</a>
+        <a class="btn promo__btn" href="form.html">Подобрать программу</a>
       </div>
     </section>
-    <div class="container-center">
+    <div class="wrap">
       <section class="targets">
         <h2 class="visually-hidden">Цели Вашего кота</h2>
-        <div class="targets__container">
+        <div class="targets__wrap">
           <h3 class="targets__title targets__title--slim">
             Похудение
           </h3>
@@ -68,8 +62,8 @@
             Каталог Slim
           </a>
         </div>
-        <div class="targets__container">
-          <h3 class="targets__title targets__title--fat">
+        <div class="targets__wrap">
+          <h3 class="targets__title targets__title--plump">
             Набор массы
           </h3>
           <p class="targets__desc">
@@ -84,12 +78,7 @@
           </a>
         </div>
       </section class="advantages">
-      <!-- <h2 class="visually-hidden">Преимущества нашей продукции</h2> -->
       <h2 class="advantages__title">Как это работает</h2>
-      <b class="advantages__title">
-<!-- strong -->
-        Как это работает
-      </b>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--sheet">
           Функциональное питание
@@ -161,10 +150,10 @@
       </section>
     </div>
   </main>
-  <footer class="page-footer">
+  <footer class="footer">
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="container-center">
+      <div class="wrap">
         <p class="contacts__title">
           приглашаем
           к сотрудничеству
@@ -177,32 +166,32 @@
         </address>
       </div>
       <div class="contacts__map">
-        <img src="" alt="" class="contacts__map-img">
-        <iframe
+        <img class="contacts__map-img" src="img/name.jpg" alt="Доходный дом Н. А. Мельцера" class="contacts__map-img"
+          width="100%" height="363">
+        <iframe class="contacts__map-iframe"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6232930776794!2d30.324084461234516!3d59.9386270406439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1563040569440!5m2!1sru!2sru"
           width="100%" height="363" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
-
     </section>
-    <div class="container-center">
-      <a class="page-footer__logo" href="#">
+    <div class="wrap footer__wrap">
+      <a class="footer__logo" href="#">
         <img src="img/name.svg" alt="Логотип «Cat Energy»" width="128" height="24">
       </a>
       <ul class="social">
         <li class="social__item">
-          <a class="social__button" href="#" aria-label="Cat Energy во Вконтакте"><img src="img/vk.svg" alt="Вконтакте"
+          <a class="social__btn" href="#" aria-label="Cat Energy во Вконтакте"><img src="img/vk.svg" alt="Вконтакте"
               width="22" height="12"></a>
         </li>
         <li class="social__item">
-          <a class="social__button" href="#" aria-label="Cat Energy в Инстаграмме"><img src="img/instagram.svg"
+          <a class="social__btn" href="#" aria-label="Cat Energy в Инстаграмме"><img src="img/instagram.svg"
               alt="Инстаграмм" width="17" height="17"></a>
         </li>
         <li class="social__item">
-          <a class="social__button" href="#" aria-label="Cat Energy в Фейсбуке"><img src="img/fb.svg" alt="Фейсбук"
+          <a class="social__btn" href="#" aria-label="Cat Energy в Фейсбуке"><img src="img/fb.svg" alt="Фейсбук"
               width="10" height="19"></a>
         </li>
       </ul>
-      <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+      <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         HTML Academy
         <img src="img/fb.svg" alt="логотип HTML Academy" width="27" height="34">
       </a>
