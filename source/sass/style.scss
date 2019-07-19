@@ -43,3 +43,38 @@ html {
   position: relative;
   margin: 0 auto;
 }
+
+.btn {
+  display: block;
+  padding-top: 12px;
+  padding-right: 29px;
+  padding-bottom: 13px;
+  padding-left: 26px;
+  border: none;
+  text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  background-color: rgb(104, 183, 56);
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3)
+  }
+
+  &--gray {
+    background-color: rgb(242, 242, 242);
+    color: rgb(68, 68, 68)
+  }
+
+  &--gray:hover,
+  &--gray:focus {
+    background-color: rgb(235, 235, 235);
+  }
+
+  &--gray:active {
+    color: rgba(68, 68, 68, 0.3)
+  }
+}
