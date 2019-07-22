@@ -1,0 +1,23 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 280px;
+  padding: 0;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin: 0;
+  padding-top: 39;
+  border-top: 1px solid rgb(217, 217, 217);
+  border-bottom: 1px solid rgb(217, 217, 217);
+
+  &__item {}
+
+  &__btn {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+}

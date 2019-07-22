@@ -1,0 +1,27 @@
+.before-after {
+  &__title {}
+
+  &__desc {}
+
+  &__container {}
+
+  &__table {}
+
+  &__descr {}
+
+  &__sub-descr {}
+
+  &__price {}
+
+  &__slider {}
+
+  &__img {
+    &--before {}
+
+    &--after {}
+  }
+
+  &__controls {
+    &-item {}
+  }
+}

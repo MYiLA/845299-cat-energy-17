@@ -1,4 +1,15 @@
 @import "block/nav.scss";
+@import "block/promo.scss";
+@import "block/targets.scss";
+@import "block/advantages.scss";
+@import "block/before-after.scss";
+@import "block/form.scss";
+@import "block/catalog.scss";
+@import "block/main-good.scss";
+@import "block/additional-products.scss";
+@import "block/footer.scss";
+@import "block/contacts.scss";
+@import "block/social.scss";
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -63,20 +74,20 @@ html {
   background-color: rgb(104, 183, 56);
 
   &:active {
-    color: rgba(255, 255, 255, 0.3)
+    color: rgba(255, 255, 255, 0.3);
   }
 
   &--gray {
     background-color: rgb(242, 242, 242);
-    color: rgb(68, 68, 68)
-  }
+    color: rgb(68, 68, 68);
 
-  &--gray:hover,
-  &--gray:focus {
-    background-color: rgb(235, 235, 235);
-  }
+    &:hover,
+    &:focus {
+      background-color: rgb(235, 235, 235);
+    }
 
-  &--gray:active {
-    color: rgba(68, 68, 68, 0.3)
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 }
