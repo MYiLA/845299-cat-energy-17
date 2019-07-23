@@ -1,15 +1,15 @@
-.advantages {
-  &__title {}
+.advantages {}
 
-  &__list {}
+.advantages__title {}
 
-  &__item {
-    &--sheet {}
+.advantages__list {}
 
-    &--glass {}
+.advantages__item {}
 
-    &--flatware {}
+.advantages__item--sheet {}
 
-    &--clock {}
-  }
-}
+.advantages__item--glass {}
+
+.advantages__item--flatware {}
+
+.advantages__item--clock {}

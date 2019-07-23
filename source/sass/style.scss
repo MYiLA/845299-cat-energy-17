@@ -1,3 +1,10 @@
+@import "variables.scss";
+@import "block/global.scss";
+@import "mixins/visually-hidden.scss";
+@import "mixins/wrap.scss";
+@import "block/btn.scss";
+@import "block/header.scss";
+@import "block/main.scss";
 @import "block/nav.scss";
 @import "block/promo.scss";
 @import "block/targets.scss";
@@ -10,84 +17,3 @@
 @import "block/footer.scss";
 @import "block/contacts.scss";
 @import "block/social.scss";
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-a {
-  text-decoration: none;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-.header,
-.main,
-.footer,
-.form {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: rgb(0, 0, 0);
-}
-
-.wrap {
-  width: 280px;
-  position: relative;
-  margin: 0 auto;
-}
-
-.btn {
-  display: block;
-  padding-top: 12px;
-  padding-right: 29px;
-  padding-bottom: 13px;
-  padding-left: 26px;
-  border: none;
-  text-align: center;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 19px;
-  line-height: 25px;
-  font-weight: 400;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  background-color: rgb(104, 183, 56);
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
-
-  &--gray {
-    background-color: rgb(242, 242, 242);
-    color: rgb(68, 68, 68);
-
-    &:hover,
-    &:focus {
-      background-color: rgb(235, 235, 235);
-    }
-
-    &:active {
-      color: rgba(68, 68, 68, 0.3);
-    }
-  }
-}

@@ -1,27 +1,27 @@
-.before-after {
-  &__title {}
+.before-after {}
 
-  &__desc {}
+.before-after__title {}
 
-  &__container {}
+.before-after__desc {}
 
-  &__table {}
+.before-after__container {}
 
-  &__descr {}
+.before-after__table {}
 
-  &__sub-descr {}
+.before-after__descr {}
 
-  &__price {}
+.before-after__sub-descr {}
 
-  &__slider {}
+.before-after__price {}
 
-  &__img {
-    &--before {}
+.before-after__slider {}
 
-    &--after {}
-  }
+.before-after__img {}
 
-  &__controls {
-    &-item {}
-  }
-}
+.before-after__img--before {}
+
+.before-after__img--after {}
+
+.before-after__controls {}
+
+.before-after__controls-item {}

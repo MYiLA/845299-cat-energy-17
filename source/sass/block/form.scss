@@ -1,27 +1,32 @@
 .form {
-  &__title {}
-
-  &__desc {}
-
-  &__form {}
-
-  &__fieldset {}
-
-  &__label {}
-
-  &__input {}
-
-  &__targets {}
-
-  &__label-radio {}
-
-  &__fieldset {}
-
-  &__legend {}
-
-  &__input-textarea {}
-
-  &__label-checkbox {}
-
-  &__required {}
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
 }
+  .form__title {}
+
+  .form__desc {}
+
+  .form__form {}
+
+  .form__fieldset {}
+
+  .form__label {}
+
+  .form__input {}
+
+  .form__targets {}
+
+  .form__label-radio {}
+
+  .form__fieldset {}
+
+  .form__legend {}
+
+  .form__input-textarea {}
+
+  .form__label-checkbox {}
+
+  .form__required {}

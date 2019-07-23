@@ -1,18 +1,23 @@
 .footer {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
   background-color: rgb(242, 242, 242);
+}
 
-  &__wrap {}
+.footer__wrap {}
 
-  &__logo {
-    padding: 0;
-    margin: 0;
-  }
+.footer__logo {
+  padding: 0;
+  margin: 0;
+}
 
-  &__copyright {
-    font-family: "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 400;
-    color: rgb(68, 68, 68);
-  }
+.footer__copyright {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
 }
