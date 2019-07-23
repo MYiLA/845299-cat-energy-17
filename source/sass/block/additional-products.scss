@@ -1,19 +1,100 @@
-.additional-products {}
+.additional-products {
+  width: 280px;
+}
 
-.additional-products__title {}
+.additional-products__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-family: $font-design;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(17, 17, 17);
+  position: relative;
 
-.additional-products__list {}
+  &::after {
+    content: "";
+    width: 53px;
+    height: 3px;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(50%);
+    background-color: rgb(104, 183, 56);
+  }
+}
 
-.additional-products__item {}
+.additional-products__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-.additional-products__title-link {}
+.additional-products__item {
+  width: 280px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid rgb(205, 205, 205);
+  background-color: rgb(255, 255, 255);
 
-.additional-products__name {}
+  &:nth-child(1) {
+    border-top: 1px solid rgb(205, 205, 205);
+  };
+}
 
-.additional-products__wrap {}
+.additional-products__title-link {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
 
-.additional-products__volume {}
+.additional-products__name {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  padding-bottom: 10px;
+  font-family: $font-design;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(34, 34, 34);
+  text-transform: uppercase;
+}
 
-.additional-products__price {}
+.additional-products__wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-.additional-products__btn {}
+.additional-products__volume {
+  padding: 0;
+  margin: 0;
+  width: 140px;
+  text-align: left;
+  padding-bottom: 15px;
+  font-family: $font-main;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: rgb(68, 68, 68);
+}
+
+.additional-products__price {
+  padding: 0;
+  margin: 0;
+  width: 140px;
+  text-align: right;
+  padding-bottom: 15px;
+  font-family: $font-main;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: rgb(68, 68, 68);
+}
+
+.additional-products__btn {
+  margin-bottom: 18px;
+}
