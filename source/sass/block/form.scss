@@ -1,32 +1,82 @@
 .form {
-  font-family: "Arial", sans-serif;
+  font-family: $font-main;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: rgb(0, 0, 0);
 }
-  .form__title {}
 
-  .form__desc {}
+.form__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  font-family: $font-design;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: rgb(17, 17, 17);
+}
 
-  .form__form {}
+.form__desc {}
 
-  .form__fieldset {}
+.form__form {}
 
-  .form__label {}
+.form__fieldset {}
 
-  .form__input {}
+.form__label {}
 
-  .form__targets {}
+.form__input {}
 
-  .form__label-radio {}
+.form__targets {}
 
-  .form__fieldset {}
+.form__label-radio {}
 
-  .form__legend {}
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
 
-  .form__input-textarea {}
+.form__legend {
+  position: relative;
+  margin: 0;
+  margin-bottom: 30px;
+  margin-right: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $font-design;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(17, 17, 17);
+  text-align: left;
 
-  .form__label-checkbox {}
+  &::after {
+    content: "";
+    height: 3px;
+    margin-left: 25px;
+    flex-grow: 1;
+    background-color: $green;
+   transform: translateY(4px);
+  }
 
-  .form__required {}
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    right: -100%;
+    background-color: $green;
+   transform: translateY(4px);
+  }
+}
+
+.form__input-textarea {}
+
+.form__label-checkbox {}
+
+.form__required {}

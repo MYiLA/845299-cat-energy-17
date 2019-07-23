@@ -1,6 +1,16 @@
 .catalog {}
 
-.catalog__title {}
+.catalog__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  font-family: $font-design;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: rgb(17, 17, 17);
+}
 
 .catalog__main-products {}
 
