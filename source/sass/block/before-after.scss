@@ -1,5 +1,7 @@
 .before-after {
   background-color: rgb(242, 242, 242);
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .before-after__title {
@@ -14,26 +16,90 @@
   color: rgb(17, 17, 17);
 }
 
-.before-after__desc {}
+.before-after__desc {
+  display: block;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  font-family: $font-main;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(68, 68, 68);
+}
 
-.before-after__container {}
+.before-after__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
 
-.before-after__table {}
+.before-after__table {
+  width: 125px;
+  text-align: center;
+}
 
-.before-after__descr {}
+.before-after__descr {
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: $font-design;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(17, 17, 17);
+  text-transform: uppercase;
+}
 
-.before-after__sub-descr {}
+.before-after__sub-descr {
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: $font-main;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: rgb(68, 68, 68);
+}
 
-.before-after__price {}
+.before-after__price {
+  display: block;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: $font-design;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(17, 17, 17);
+  text-transform: uppercase;
+}
 
-.before-after__slider {}
+.before-after__slider {
+  width: 280px;
+}
 
 .before-after__img {}
 
-.before-after__img--before {}
+.before-after__img--before {
+  display: block;
+}
 
-.before-after__img--after {}
+.before-after__img--after {
+  display: none;
+}
 
 .before-after__controls {}
 
-.before-after__controls-item {}
+.before-after__controls-item {
+  font-family: $font-design;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(17, 17, 17);
+  text-transform: uppercase;
+}

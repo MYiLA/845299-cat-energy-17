@@ -1,11 +1,73 @@
-.targets {}
+.targets {
+  margin-bottom: 15px;
+}
 
-.targets__wrap {}
+.targets__wrap {
+  margin-bottom: 20px;
+  background-color: rgb(242, 242, 242);
+  padding: 22px;
+}
 
-.targets__title {}
+.targets__title {
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 75px;
+  font-family: $font-design;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  color: rgb(17, 17, 17);
+  text-transform: uppercase;
+}
 
-.targets__title--slim {}
+.targets__title--slim {
+  position: relative;
 
-.targets__desc {}
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(50%);
+    background-image: url(../../img/icon-cat-slim.svg);
+    background-color: $green;
+  }
+}
 
-.targets__link {}
+.targets__title--plump {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(50%);
+    background-image: url(../../img/icon-cat-pro.svg);
+    background-color: $green;
+  }
+
+  .targets__desc {
+    padding: 0;
+    margin: 0;
+    font-family: $font-main;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgb(68, 68, 68);
+  }
+
+  .targets__link {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    border-top: 1px solid rgb(217, 217, 217);
+    font-family: $font-design;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+  }

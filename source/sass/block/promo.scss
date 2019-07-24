@@ -1,9 +1,45 @@
-.promo {}
+.promo {
+  margin-bottom: 23px;
+  position: relative;
 
-.promo__title {}
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    min-height: 307px;
+    background-image: url(../../img/index-background-mobile@1x.jpg);
+    background-color: $green;
+  }
+}
 
-.promo__slogan {}
+.promo__title {
+  padding: 0;
+  margin: 0;
+  padding-top: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: $font-design;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: rgb(255, 255, 255);
+}
 
-.promo__img {}
+.promo__slogan {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: $font-design;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: rgb(255, 255, 255);
+}
+
+.promo__img {
+  margin: 0;
+  padding: 0;
+}
 
 .promo__btn {}
