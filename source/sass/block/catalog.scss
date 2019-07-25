@@ -70,32 +70,41 @@
 
 .catalog__event {
   width: 280px;
+  min-height: 290px;
   margin-bottom: 36px;
+  // padding-bottom: 65px; не работает паддинг((( не могу опустить вниз деск. В чем тут ошибка?
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
   background-color: $green;
 }
 
 .catalog__event-desc {
   display: block;
+  width: 165px;
   margin: 0;
   padding: 0;
-  margin-top: 65px;
   margin-bottom: 35px;
+  margin-left: 50%;
   padding-top: 125px;
+  transform: translateX(-50%);
   text-align: center;
   font-family: $font-main;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 16px;
-  color: rgb(68, 68, 68);
+  line-height: 20px;
+  color: rgb(255, 255, 255);
   position: relative;
 
   &::before {
+    content: "";
     position: absolute;
+    width: 55px;
+    height: 50px;
     top: 0;
-    left: 50%;
+    left: 25px;
     transform: translateX(50%);
     background-image: url("../../img/icon-gift.svg");
     background-repeat: no-repeat;
+    background-position-x: 50%;
   }
 }
