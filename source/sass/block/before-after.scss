@@ -83,17 +83,27 @@
   width: 280px;
 }
 
-.before-after__img {}
+.before-after__img {
+  margin: 0;
+  padding: 0;
+}
 
 .before-after__img--before {
   display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .before-after__img--after {
   display: none;
+  margin: 0;
+  padding: 0;
 }
 
-.before-after__controls {}
+.before-after__controls {
+  padding: 0;
+  margin: 0;
+}
 
 .before-after__controls-item {
   font-family: $font-design;

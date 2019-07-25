@@ -34,7 +34,9 @@
   text-transform: uppercase;
 }
 
-.form__form {}
+.form__form {
+  margin: 0;
+}
 
 .form__fieldset {
   margin: 0;
@@ -130,7 +132,10 @@
 .form__input-textarea {
   padding: 0;
   margin: 0;
-  padding: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
   margin-bottom: 32px;
   border: 1px solid rgb(230, 230, 230);
   font-family: $font-design;

@@ -7,7 +7,7 @@
     position: absolute;
     top: 0;
     min-height: 307px;
-    background-image: url(../../img/index-background-mobile@1x.jpg);
+    background-image: url("../../img/index-background-mobile@1x.jpg");
     background-color: $green;
   }
 }
@@ -42,4 +42,6 @@
   padding: 0;
 }
 
-.promo__btn {}
+.promo__btn {
+  margin: 0;
+}

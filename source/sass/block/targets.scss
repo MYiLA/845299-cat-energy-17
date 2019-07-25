@@ -31,7 +31,7 @@
     left: 0;
     top: 50%;
     transform: translateY(50%);
-    background-image: url(../../img/icon-cat-slim.svg);
+    background-image: url("../../img/icon-cat-slim.svg");
     background-color: $green;
   }
 }
@@ -45,29 +45,30 @@
     left: 0;
     top: 50%;
     transform: translateY(50%);
-    background-image: url(../../img/icon-cat-pro.svg);
+    background-image: url("../../img/icon-cat-pro.svg");
     background-color: $green;
   }
+}
 
-  .targets__desc {
-    padding: 0;
-    margin: 0;
-    font-family: $font-main;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    color: rgb(68, 68, 68);
-  }
+.targets__desc {
+  padding: 0;
+  margin: 0;
+  font-family: $font-main;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(68, 68, 68);
+}
 
-  .targets__link {
-    margin: 0;
-    padding: 0;
-    padding-top: 20px;
-    border-top: 1px solid rgb(217, 217, 217);
-    font-family: $font-design;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-    color: rgb(17, 17, 17);
-    text-transform: uppercase;
-  }
+.targets__link {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  border-top: 1px solid rgb(217, 217, 217);
+  font-family: $font-design;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(17, 17, 17);
+  text-transform: uppercase;
+}

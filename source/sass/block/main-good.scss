@@ -1,7 +1,7 @@
 .main-good {
   padding-top: 20px;
   padding-bottom: 24px;
-  background-color: rgb(255, 255, 255)
+  background-color: rgb(255, 255, 255);
 }
 
 .main-good__img-link {
@@ -14,7 +14,6 @@
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
-
 }
 
 .main-good__title {
@@ -59,4 +58,6 @@
   text-align: right;
 }
 
-.main-good__btn {}
+.main-good__btn {
+  margin: 0;
+}
