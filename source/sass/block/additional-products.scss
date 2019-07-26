@@ -8,9 +8,7 @@
   margin-bottom: 30px;
   margin-right: 0;
   padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  .flex-between;
   align-items: center;
   font-family: $font-design;
   font-size: 24px;
@@ -40,9 +38,7 @@
 }
 
 .additional-products__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  .list-reset;
 }
 
 .additional-products__item {
@@ -77,10 +73,7 @@
 }
 
 .additional-products__wrap {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  .flex-between;
 }
 
 .additional-products__volume {

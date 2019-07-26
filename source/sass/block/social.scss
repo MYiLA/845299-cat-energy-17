@@ -1,13 +1,9 @@
 .social {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  list-style: none;
+  .flex-between ($justify: flex-start);
+  .list-reset;
   width: 280px;
-  padding: 0;
   padding-right: 40px;
   padding-left: 40px;
-  margin: 0;
   padding-top: 39;
   border-top: 1px solid rgb(217, 217, 217);
   border-bottom: 1px solid rgb(217, 217, 217);
