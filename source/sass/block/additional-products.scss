@@ -23,7 +23,7 @@
   margin-bottom: 10px;
   padding-top: 10px;
   border-bottom: 1px solid rgb(205, 205, 205);
-  background-color: rgb(255, 255, 255);
+  background-color: $white;
 
   &:nth-child(1) {
     border-top: 1px solid rgb(205, 205, 205);
@@ -59,11 +59,9 @@
   width: 140px;
   text-align: left;
   padding-bottom: 15px;
-  font-family: $font-main;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 14px;
-  color: rgb(68, 68, 68);
+
+  @include font-main ($line:14px);
+  color: $gray-font-main;
 }
 
 .additional-products__price {
@@ -72,11 +70,9 @@
   width: 140px;
   text-align: right;
   padding-bottom: 15px;
-  font-family: $font-main;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 14px;
-  color: rgb(68, 68, 68);
+
+  @include font-main ($line:14px);
+  color: $gray-font-main;
 }
 
 .additional-products__btn {

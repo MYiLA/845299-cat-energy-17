@@ -1,6 +1,6 @@
 .nav {
   @include flex-between;
-  background-color: rgb(255, 255, 255);
+  background-color: $white;
   padding-top: 11px;
 }
 
@@ -40,7 +40,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(0, 0, 0);
+    background-color: $black;
   }
 
   &::before {
@@ -51,7 +51,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(0, 0, 0);
+    background-color: $black;
   }
 }
 
@@ -67,7 +67,7 @@
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 5px;
-  border-top: 1px solid rgb(230, 230, 230);
+  border-top: $border-input;
 }
 
 .nav__link {
@@ -78,9 +78,9 @@
   padding-left: 10px;
 
   @include title ($size:20px $line:20px);
-  color: rgb(0, 0, 0);
+  color: $black;
   text-transform: uppercase;
-  background-color: rgb(255, 255, 255);
+  background-color: $white;
   border-bottom: 2px solid rgba(255, 255, 255, 0);
 
   &:hover,
@@ -93,7 +93,7 @@
   }
 
   &:not([href]) {
-    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid $black;
     opacity: 1;
   }
 }

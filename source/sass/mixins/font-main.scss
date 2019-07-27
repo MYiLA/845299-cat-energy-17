@@ -1,0 +1,6 @@
+@mixin font-main ($size:14px $line:18px) {
+  font-family: $font-main;
+  font-size: $size;
+  font-weight: 400;
+  line-height: $line;
+}

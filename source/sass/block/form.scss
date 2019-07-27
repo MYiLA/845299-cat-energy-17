@@ -1,9 +1,6 @@
 .form {
-  font-family: $font-main;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: rgb(0, 0, 0);
+  @include font-main;
+  color: $black;
 }
 
 .form__title {
@@ -14,7 +11,7 @@
   text-align: left;
 
   @include title ($size:36px $line:60px);
-  color: rgb(17, 17, 17);
+  color: $gray-font-design;
 }
 
 .form__desc {
@@ -27,7 +24,7 @@
 
   @include title ($size:14px $line:18px);
   text-transform: uppercase;
-  color: rgb(17, 17, 17);
+  color: $gray-font-design;
 }
 
 .form__form {
@@ -62,18 +59,18 @@
   padding-top: 15px;
   padding-bottom: 15px;
   flex-grow: 1;
-  border: 1px solid rgb(230, 230, 230);
+  border: $border-input;
 
   @include title ($size:16px $line:18px);
-  color: rgb(68, 68, 68);
+  color: $gray-font-main;
   text-transform: uppercase;
 }
 
 .form__targets {
   display: block;
   border: none;
-  border-top: 1px solid rgb(230, 230, 230);
-  border-bottom: 1px solid rgb(230, 230, 230);
+  border-top: $border-input;
+  border-bottom: $border-input;
 }
 
 .form__label-radio {
@@ -105,10 +102,10 @@
   padding-bottom: 15px;
   padding-left: 15px;
   margin-bottom: 32px;
-  border: 1px solid rgb(230, 230, 230);
+  border: $border-input;
 
   @include title ($size:16px $line:18px);
-  color: rgb(68, 68, 68);
+  color: $gray-font-main;
   text-transform: uppercase;
 }
 
@@ -125,9 +122,7 @@
   display: block;
   text-align: center;
   margin-bottom: 30px;
-  font-family: $font-main;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-  color: rgb(68, 68, 68);
+
+  @include font-main ($line:16px);
+  color: $gray-font-main;
 }

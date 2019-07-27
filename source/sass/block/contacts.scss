@@ -1,5 +1,5 @@
 .contacts {
-  background-color: rgb(255, 255, 255);
+  background-color: $white;
 }
 
 .contacts__title {
@@ -8,7 +8,7 @@
   text-align: left;
 
   @include title ($size:16px $line:20px);
-  color: rgb(0, 0, 0);
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -16,11 +16,8 @@
   padding: 0;
   margin: 0;
   text-align: left;
-  font-family: $font-main;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  color: rgb(0, 0, 0);
+  @include font-main ($line:20px);
+  color: $black;
   font-style: normal;
 }
 

@@ -23,7 +23,7 @@
   text-align: center;
 
   @include title ($size:36px $line:36px);
-  color: rgb(255, 255, 255);
+  color: $white;
 }
 
 .promo__slogan {
@@ -33,7 +33,7 @@
   text-align: center;
 
   @include title ($size:14px $line:14px);
-  color: rgb(255, 255, 255);
+  color: $white;
   text-transform: uppercase;
 }
 

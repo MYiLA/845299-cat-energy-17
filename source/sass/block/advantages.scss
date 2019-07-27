@@ -9,7 +9,7 @@
   padding: 0;
 
   @include title ($size:36px $line:60px);
-  color: rgb(17, 17, 17);
+  color: $gray-font-design;
 }
 
 .advantages__list {
@@ -23,11 +23,9 @@
   padding-left: 80px;
   margin-bottom: 25px;
   position: relative;
-  font-family: $font-main;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  color: rgb(68, 68, 68);
+
+  @include font-main;
+  color: $gray-font-main;
 }
 
 .advantages__item--sheet {

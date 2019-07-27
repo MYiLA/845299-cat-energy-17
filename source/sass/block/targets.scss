@@ -4,7 +4,7 @@
 
 .targets__wrap {
   margin-bottom: 20px;
-  background-color: rgb(242, 242, 242);
+  background-color: $background-color;
   padding: 22px;
 }
 
@@ -17,7 +17,7 @@
   padding-bottom: 15px;
 
   @include title ($size:24px $line:37px);
-  color: rgb(17, 17, 17);
+  color: $gray-font-design;
   text-transform: uppercase;
 }
 
@@ -83,11 +83,9 @@
   padding: 0;
   margin: 0;
   margin-bottom: 50px;
-  font-family: $font-main;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  color: rgb(68, 68, 68);
+
+  @include font-main ($size:14px $line:18px);
+  color: $gray-font-main;
 }
 
 .targets__link {
@@ -97,6 +95,6 @@
   border-top: 1px solid rgb(217, 217, 217);
 
   @include title ($size:16px $line:16px);
-  color: rgb(17, 17, 17);
+  color: $gray-font-design;
   text-transform: uppercase;
 }

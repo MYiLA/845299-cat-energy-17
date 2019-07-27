@@ -10,7 +10,7 @@
   font-size: 19px;
   line-height: 25px;
   font-weight: 400;
-  color: rgb(255, 255, 255);
+  color: $white;
   text-transform: uppercase;
   background-color: rgb(104, 183, 56);
 
@@ -20,8 +20,8 @@
 }
 
 .btn--gray {
-  background-color: rgb(242, 242, 242);
-  color: rgb(68, 68, 68);
+  background-color: $background-color;
+  color: $gray-font-main;
 
   &:hover,
   &:focus {
