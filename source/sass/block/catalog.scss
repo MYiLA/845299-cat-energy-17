@@ -55,6 +55,7 @@
   padding: 0;
   margin-bottom: 20px;
   text-align: center;
+
   @include font-main ($size:12px $line:16px);
   color: $gray-font-main;
 }
@@ -79,6 +80,7 @@
   padding-top: 125px;
   transform: translateX(-50%);
   text-align: center;
+
   @include font-main ($size:16px $line:20px);
   color: $white;
   position: relative;

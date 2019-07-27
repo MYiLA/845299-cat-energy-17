@@ -37,6 +37,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 5px;
+
   @include font-main ($size:12px $line:16px);
   color: $gray-font-main;
 }
