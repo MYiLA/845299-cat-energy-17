@@ -1,0 +1,101 @@
+.before-after {
+  background-color: $background-color;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.before-after__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  font-family: $font-design;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: $gray-font-design;
+}
+
+.before-after__desc {
+  display: block;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+
+  @include font-main;
+  color: $gray-font-main;
+}
+
+.before-after__container {
+  @include flex-between;
+  margin-bottom: 10px;
+}
+
+.before-after__table {
+  width: 125px;
+  text-align: center;
+}
+
+.before-after__descr {
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  @include title;
+  text-transform: uppercase;
+  color: $gray-font-design;
+}
+
+.before-after__sub-descr {
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  @include font-main ($size:12px $line:12px);
+  color: $gray-font-main;
+}
+
+.before-after__price {
+  display: block;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
+  @include title ($size:14px $line:20px);
+  text-transform: uppercase;
+  color: $gray-font-design;
+}
+
+.before-after__slider {
+  width: 280px;
+}
+
+.before-after__img {
+  margin: 0;
+  padding: 0;
+}
+
+.before-after__img--before {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.before-after__img--after {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.before-after__controls {
+  padding: 0;
+  margin: 0;
+}
+
+.before-after__controls-item {
+  @include title ($size:16px $line:20px);
+  text-transform: uppercase;
+  color: $gray-font-design;
+}

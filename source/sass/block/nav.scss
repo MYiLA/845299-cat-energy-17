@@ -1,0 +1,99 @@
+.nav {
+  @include flex-between;
+  background-color: $white;
+  padding-top: 11px;
+}
+
+.nav__logo {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+
+.nav__menu-btn {
+  width: 25px;
+  height: 40px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  transform: rotate(45deg);
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $black;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $black;
+  }
+}
+
+.nav__list {
+  @include list-reset;
+  width: 100%;
+}
+
+.nav__item {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  border-top: $border-input;
+}
+
+.nav__link {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+
+  @include title ($size:20px $line:20px);
+  color: $black;
+  text-transform: uppercase;
+  background-color: $white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:not([href]) {
+    border-bottom: 2px solid $black;
+    opacity: 1;
+  }
+}

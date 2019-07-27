@@ -1,0 +1,21 @@
+.footer {
+  @include font-main;
+  color: $black;
+  background-color: $background-color;
+}
+
+.footer__wrap {
+  margin: 0;
+
+  @include wrap ($width: 320px);
+}
+
+.footer__logo {
+  padding: 0;
+  margin: 0;
+}
+
+.footer__copyright {
+  @include font-main ($size:16px $line:16px);
+  color: $gray-font-main;
+}

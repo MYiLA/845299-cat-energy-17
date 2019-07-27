@@ -1,0 +1,100 @@
+.catalog {
+  padding: 0;
+  margin: 0;
+  background-color: $white;
+}
+
+.catalog__title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+
+  @include title ($size:36px $line:60px);
+  color: $gray-font-design;
+}
+
+.catalog__main-products {
+  margin-bottom: 30px;
+  border-bottom: $border-lite;
+}
+
+.catalog__main-list {
+  @include list-reset;
+  margin-bottom: 80px;
+}
+
+.catalog__main-item {
+  border-top: $border-lite;
+
+  &:nth-last-child {
+    border-bottom: $border-lite;
+  }
+}
+
+.catalog__article {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog__more {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  text-align: center;
+
+  @include title ($size:16px $line:20px);
+  text-transform: uppercase;
+  color: $gray-font-design;
+}
+
+.catalog__more-desc {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @include font-main ($size:12px $line:16px);
+  color: $gray-font-main;
+}
+
+.catalog__event {
+  width: 280px;
+  min-height: 290px;
+  margin-bottom: 36px;
+  // padding-bottom: 65px; не работает паддинг((( не могу опустить вниз деск. В чем тут ошибка?
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: $green;
+}
+
+.catalog__event-desc {
+  display: block;
+  width: 165px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  margin-left: 50%;
+  padding-top: 125px;
+  transform: translateX(-50%);
+  text-align: center;
+
+  @include font-main ($size:16px $line:20px);
+  color: $white;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 50px;
+    top: 0;
+    left: 25px;
+    transform: translateX(50%);
+    background-image: url("../../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+  }
+}
