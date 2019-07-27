@@ -1,7 +1,6 @@
-.title ($size:24px $line:24px) {
+@mixin title ($size:24px $line:24px) {
   font-family: $font-design;
   font-size: $size;
   font-weight: 400;
   line-height: $line;
-  color: rgb(17, 17, 17);
 }

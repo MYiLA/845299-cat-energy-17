@@ -1,6 +1,6 @@
 .social {
-  .flex-between ($justify: flex-start);
-  .list-reset;
+  @include flex-between ($justify: flex-start);
+  @include list-reset;
   width: 280px;
   padding-right: 40px;
   padding-left: 40px;

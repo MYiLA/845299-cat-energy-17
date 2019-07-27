@@ -1,5 +1,5 @@
 .footer {
-  font-family: "Arial", sans-serif;
+  font-family: $font-main;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -9,7 +9,8 @@
 
 .footer__wrap {
   margin: 0;
-  .wrap ($width: 320px;)
+
+  @include wrap ($width: 320px);
 }
 
 .footer__logo {
@@ -18,7 +19,7 @@
 }
 
 .footer__copyright {
-  font-family: "Arial", sans-serif;
+  font-family: $font-main;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
