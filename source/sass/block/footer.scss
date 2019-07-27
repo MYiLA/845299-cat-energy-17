@@ -16,6 +16,6 @@
 }
 
 .footer__copyright {
-  @include font-main ($size:16px $line:16px);
+  @include font-main ($size:16px, $line:16px);
   color: $gray-font-main;
 }

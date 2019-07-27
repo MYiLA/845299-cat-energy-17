@@ -7,7 +7,7 @@
   margin: 0;
   text-align: left;
 
-  @include title ($size:16px $line:20px);
+  @include title ($size:16px, $line:20px);
   color: $black;
   text-transform: uppercase;
 }

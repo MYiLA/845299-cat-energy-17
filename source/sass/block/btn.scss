@@ -6,10 +6,8 @@
   padding-left: 26px;
   border: none;
   text-align: center;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 19px;
-  line-height: 25px;
-  font-weight: 400;
+
+  @include title ($size:19px, $line:25px);
   color: $white;
   text-transform: uppercase;
   background-color: rgb(104, 183, 56);

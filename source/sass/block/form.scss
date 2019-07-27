@@ -10,7 +10,7 @@
   margin-bottom: 35px;
   text-align: left;
 
-  @include title ($size:36px $line:60px);
+  @include title ($size:36px, $line:60px);
   color: $gray-font-design;
 }
 
@@ -22,7 +22,7 @@
   margin-bottom: 35px;
   text-align: left;
 
-  @include title ($size:14px $line:18px);
+  @include title ($size:14px, $line:18px);
   text-transform: uppercase;
   color: $gray-font-design;
 }
@@ -47,7 +47,7 @@
   margin-right: 15px;
   text-align: left;
 
-  @include title ($size:16px $line:18px);
+  @include title ($size:16px, $line:18px);
   color: rgb(34, 34, 34);
   text-transform: uppercase;
 }
@@ -61,7 +61,7 @@
   flex-grow: 1;
   border: $border-input;
 
-  @include title ($size:16px $line:18px);
+  @include title ($size:16px, $line:18px);
   color: $gray-font-main;
   text-transform: uppercase;
 }
@@ -77,7 +77,7 @@
   display: block;
   padding-left: 45px;
 
-  @include title ($size:16px $line:18px);
+  @include title ($size:16px, $line:18px);
   color: rgb(34, 34, 34);
   text-transform: uppercase;
 }
@@ -104,7 +104,7 @@
   margin-bottom: 32px;
   border: $border-input;
 
-  @include title ($size:16px $line:18px);
+  @include title ($size:16px, $line:18px);
   color: $gray-font-main;
   text-transform: uppercase;
 }
@@ -113,7 +113,7 @@
   display: block;
   padding-left: 45px;
 
-  @include title ($size:16px $line:18px);
+  @include title ($size:16px, $line:18px);
   color: rgb(34, 34, 34);
   text-transform: uppercase;
 }

@@ -22,7 +22,7 @@
   margin: 0;
   text-align: left;
 
-  @include title ($size:16px $line:20px);
+  @include title ($size:16px, $line:20px);
   color: $gray-font-design;
   text-transform: uppercase;
 }
@@ -38,7 +38,7 @@
   margin: 0;
   margin-bottom: 5px;
 
-  @include font-main ($size:12px $line:16px);
+  @include font-main ($size:12px, $line:16px);
   color: $gray-font-main;
 }
 

@@ -16,7 +16,7 @@
   padding-left: 75px;
   padding-bottom: 15px;
 
-  @include title ($size:24px $line:37px);
+  @include title ($size:24px, $line:37px);
   color: $gray-font-design;
   text-transform: uppercase;
 }
@@ -84,7 +84,7 @@
   margin: 0;
   margin-bottom: 50px;
 
-  @include font-main ($size:14px $line:18px);
+  @include font-main ($size:14px, $line:18px);
   color: $gray-font-main;
 }
 
@@ -94,7 +94,7 @@
   padding-top: 20px;
   border-top: 1px solid rgb(217, 217, 217);
 
-  @include title ($size:16px $line:16px);
+  @include title ($size:16px, $line:16px);
   color: $gray-font-design;
   text-transform: uppercase;
 }
