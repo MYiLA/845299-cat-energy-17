@@ -1,16 +1,6 @@
 .nav {
   @include flex-between;
   padding-top: 11px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 24px;
-
-    @include flex-between;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 55px;
-  }
 }
 
 .nav__logo {
@@ -26,16 +16,6 @@
 
   &:active {
     opacity: 0.6;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 154px;
-    height: 65px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 205px;
-    height: 60px;
   }
 }
 
@@ -71,48 +51,17 @@
     transform: translate(-50%, -50%);
     background-color: $black;
   }
-
-  @media (min-width: $tablet-width) {
-    @include visually-hidden;
-  }
 }
 
 .nav__list {
   @include list-reset;
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    width: 510px;
-
-    @include flex-between ($justify: flex-start);
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 650px;
-  }
 }
 
 .nav__item {
   margin: 0;
   padding: 0;
   border-top: $border-input;
-
-  @media (min-width: $tablet-width) {
-    padding-right: 15px;
-    border: none;
-
-    &:nth-child(3n+3) {
-      padding-right: 0;
-    }
-
-    &:nth-child(3n+1) .nav__link {
-      text-align: right;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-  }
 }
 
 .nav__link {
@@ -152,20 +101,6 @@
     left: 0;
     opacity: 1;
     background-color: $green;
-
-    @media (min-width: $desktop-width) {
-      background-color: $white;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 160px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 214px;
-    text-align: right;
-    padding-right: 40px;
   }
 }
 
@@ -177,14 +112,79 @@
   position: relative;
   color: $black;
   text-transform: uppercase;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .nav {
+    @include flex-between;
+    padding-top: 24px;
+  }
+
+  .nav__logo {
+    width: 154px;
+    height: 65px;
+  }
+
+  .nav__menu-btn {
+    @include visually-hidden;
+  }
+
+  .nav__list {
+    @include flex-between ($justify: flex-start);
+    width: 510px;
+  }
+
+  .nav__item {
+    padding-right: 15px;
+    border: none;
+
+    &:nth-child(3n+3) {
+      padding-right: 0;
+    }
+
+    &:nth-child(3n+1) .nav__link {
+      text-align: right;
+    }
+  }
+
+  .nav__link {
+    width: 160px;
+  }
+
+  .nav__span {
     @include title ($size:18px, $line:25px);
   }
 }
 
-.nav__span--white {
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .nav {
+    padding-top: 55px;
+  }
+
+  .nav__logo {
+    width: 205px;
+    height: 60px;
+  }
+
+  .nav__list {
+    width: 650px;
+  }
+
+  .nav__item {
+    padding: 0;
+  }
+
+  .nav__link {
+    width: 214px;
+    text-align: right;
+    padding-right: 40px;
+
+    &:not([href]) .nav__span--white::after {
+      background-color: $white;
+    }
+  }
+
+  .nav__span--white {
     font-size: 20px;
     color: $white;
   }

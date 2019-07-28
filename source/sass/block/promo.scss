@@ -12,18 +12,6 @@
     background-color: rgb(101, 169, 60);
     background-repeat: no-repeat;
     background-position-x: 50%;
-
-    @media (min-width: $desktop-width) {
-      z-index: -1;
-    }
-
-    @media (min-width: $tablet-width) {
-      @include visually-hidden;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    position: static;
   }
 }
 
@@ -36,11 +24,6 @@
 
   @include title ($size:36px, $line:36px);
   color: $white;
-
-  @media (min-width: $tablet-width) {
-    @include title ($size:60px, $line:60px);
-    color: $black;
-  }
 }
 
 .promo__slogan {
@@ -53,11 +36,6 @@
   @include title ($size:14px, $line:14px);
   color: $white;
   text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    @include title ($size:20px, $line:20px);
-    color: $black;
-  }
 }
 
 .promo__img {
@@ -67,4 +45,35 @@
 
 .promo__btn {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    &::before {
+      background-image: none;
+      background-color: white;
+    }
+  }
+
+  .promo__title {
+    @include title ($size:60px, $line:60px);
+    color: $black;
+  }
+
+  .promo__slogan {
+    @include title ($size:20px, $line:20px);
+    color: $black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    position: static;
+
+    &::before {
+      z-index: -1;
+      background-image: url("../../img/index-background-mobile@1x.jpg");
+      background-color: rgb(101, 169, 60);
+    }
+  }
 }

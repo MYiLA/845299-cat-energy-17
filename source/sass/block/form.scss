@@ -112,12 +112,6 @@
   text-transform: uppercase;
 }
 
-.form .form__submit {
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-
 .form__required {
   display: block;
   text-align: center;
@@ -125,4 +119,10 @@
 
   @include font-main ($line:16px);
   color: $gray-font-main;
+}
+
+@media (min-width: $tablet-width) {
+  .form__submit {
+    display: block;
+  }
 }
