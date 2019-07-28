@@ -17,3 +17,7 @@ input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   @include visually-hidden;
 }
+
+.wrap {
+  @include wrap;
+}
