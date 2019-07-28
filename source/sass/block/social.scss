@@ -2,20 +2,21 @@
   @include flex-between ($justify: flex-start);
   @include list-reset;
   width: 280px;
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-top: 39;
+  padding-right: 50px;
+  padding-left: 50px;
   border-top: 1px solid rgb(217, 217, 217);
   border-bottom: 1px solid rgb(217, 217, 217);
 }
 
 .social__item {
-  margin: 0;
-  padding: 0;
+ display: block;
 }
 
 .social__btn {
-  padding-top: 20px;
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-top: 24px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
