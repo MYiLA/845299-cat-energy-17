@@ -69,7 +69,7 @@
 }
 
 .before-after__slider {
-  width: 280px;
+  @include wrap;
 }
 
 .before-after__img {

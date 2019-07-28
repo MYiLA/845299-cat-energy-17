@@ -1,5 +1,10 @@
 @mixin green-title ($size:24px, $line:24px) {
   position: relative;
+  margin: 0;
+  padding: 0;
+  padding-right: 24px;
+  display: inline-block;
+  vertical-align: baseline;
   font-family: $font-design;
   font-size: $size;
   font-weight: 400;

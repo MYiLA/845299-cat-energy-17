@@ -16,7 +16,8 @@
 
 .form__desc {
   display: block;
-  width: 230px;
+
+  @include wrap;
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
@@ -83,13 +84,8 @@
 }
 
 .form__legend {
-  display: block;
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-  padding-right: 24px;
-
   @include green-title;
+  margin-bottom: 30px;
 }
 
 .form__input-textarea {
@@ -114,6 +110,12 @@
   @include title ($size:16px, $line:18px);
   color: rgb(34, 34, 34);
   text-transform: uppercase;
+}
+
+.form .form__submit {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .form__required {
