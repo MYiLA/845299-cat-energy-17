@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 24px;
+
     @include flex-between;
   }
 
