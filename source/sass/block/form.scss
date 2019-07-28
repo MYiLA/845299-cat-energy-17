@@ -83,13 +83,11 @@
 }
 
 .form__legend {
+  display: block;
   margin: 0;
   margin-bottom: 30px;
-  margin-right: 0;
   padding: 0;
-
-  @include flex-between;
-  align-items: center;
+  padding-right: 24px;
 
   @include green-title;
 }

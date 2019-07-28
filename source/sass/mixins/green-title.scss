@@ -6,23 +6,28 @@
   line-height: $line;
   color: rgb(17, 17, 17);
   text-align: left;
+  z-index: 1;
 
   &::after {
     content: "";
-    height: 3px;
-    margin-left: 25px;
-    flex-grow: 1;
-    background-color: $green;
-    transform: translateY(4px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: $white;
+    z-index: -1;
   }
 
   &::before {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 3px;
-    right: -100%;
+    left: 0;
+    top: 10px;
     background-color: $green;
     transform: translateY(4px);
+    z-index: -1;
   }
 }
