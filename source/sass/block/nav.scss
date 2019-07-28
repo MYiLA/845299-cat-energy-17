@@ -1,7 +1,17 @@
 .nav {
   @include flex-between;
-  background-color: $white;
   padding-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    @include flex-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
+  }
 }
 
 .nav__logo {
@@ -18,8 +28,19 @@
   &:active {
     opacity: 0.6;
   }
-}
 
+  @media (min-width: $tablet-width) {
+    width: 154px;
+    height: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 205px;
+    height: 60px;
+    background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
+  }
+}
 
 .nav__menu-btn {
   width: 25px;
@@ -53,21 +74,50 @@
     transform: translate(-50%, -50%);
     background-color: $black;
   }
+
+  @media (min-width: $tablet-width) {
+    @include visually-hidden;
+  }
 }
 
 .nav__list {
   @include list-reset;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 510px;
+
+    @include flex-between ($justify: flex-start);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 650px;
+    background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
+  }
 }
 
 .nav__item {
   margin: 0;
   padding: 0;
-  padding-top: 5px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 5px;
   border-top: $border-input;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 15px;
+    border: none;
+
+    &:nth-child(3n+3) {
+      padding-right: 0;
+    }
+
+    &:nth-child(3n+1) .nav__link {
+      text-align: right;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .nav__link {
@@ -76,8 +126,6 @@
   margin: 0;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 10px;
-  background-color: $white;
   border-bottom: 2px solid rgba(255, 255, 255, 0);
 
   &:hover,
@@ -96,8 +144,27 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: $green;
     opacity: 1;
+    background-color: $green;
+
+    @media (min-width: $desktop-width) {
+      background-color: rgb(209, 204, 204);
+      // здесь потом будет цвет @white. Сейчас не понимаю,
+      // как его заменить на листах других страниц (он там черный, а на индексе белый) без применения
+      // доп класса-модификатора. может есть еще способы?
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 214px;
+    text-align: right;
+    padding-right: 40px;
+    background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
   }
 }
 
@@ -109,4 +176,13 @@
   position: relative;
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include title ($size:18px, $line:25px);
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    color: rgb(209, 204, 204);
+  }
 }
