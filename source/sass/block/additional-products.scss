@@ -1,5 +1,4 @@
 .additional-products {
-  @include wrap;
   padding: 0;
   margin: 0;
 }
@@ -14,7 +13,6 @@
 }
 
 .additional-products__item {
-  @include wrap;
   margin-bottom: 10px;
   padding-top: 10px;
   border-bottom: 1px solid rgb(205, 205, 205);

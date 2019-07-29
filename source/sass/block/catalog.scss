@@ -61,10 +61,9 @@
 }
 
 .catalog__event {
-  @include wrap;
   min-height: 290px;
   margin-bottom: 36px;
-  // padding-bottom: 65px; не работает паддинг((( не могу опустить вниз деск. В чем тут ошибка?
+  padding-top: 65px;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position-x: 0;
