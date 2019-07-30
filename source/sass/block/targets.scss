@@ -98,19 +98,93 @@
   color: $gray-font-design;
   text-transform: uppercase;
 }
-//
-//
-//
-//
-//
-//_________TABLET__________////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//
-//
-//
-//
-// @media (min-width: $tablet-width) {
 
+@media (min-width: $tablet-width) {
+  .targets__wrap {
+    margin-bottom: 20px;
+    background-color: $background-color;
+    padding-top: 80px;
+    padding-right: 55px;
+    padding-bottom: 65px;
+    padding-left: 55px;
+  }
+
+  .targets__title {
+    @include title ($size:36px, $line:37px);
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .targets__title--slim {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 49px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url("../../img/icon-cat-slim.svg");
+      background-position: 50%, 50%;
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      background-color: $green;
+    }
+  }
+
+  .targets__title--plump {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 67px;
+      height: 28px;
+      left: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url("../../img/icon-cat-pro.svg");
+      background-position: 50%, 50%;
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      background-color: $green;
+    }
+  }
+
+  .targets__desc {
+    @include font-main ($size:16px, $line:24px);
+    margin-bottom: 65px;
+    width: 375px;
+  }
+
+  .targets__link {
+    padding-top: 0;
+    padding-right: 45px;
+    border: none;
+  }
+}
 // }
 //
 //
