@@ -101,77 +101,47 @@
 
 @media (min-width: $tablet-width) {
   .targets__wrap {
-    margin-bottom: 20px;
     background-color: $background-color;
     padding-top: 80px;
-    padding-right: 55px;
-    padding-bottom: 65px;
-    padding-left: 55px;
+    padding-right: 50px;
+    padding-left: 50px;
+    position: relative;
+    margin-bottom: 35px;
   }
 
   .targets__title {
     @include title ($size:36px, $line:37px);
+    position: static;
     padding: 0;
     margin-bottom: 30px;
   }
 
-  // .targets__title--slim {
-  //   position: relative;
+  .targets__title--slim,
+  .targets__title--plump {
+    &::before {
+      width: 200px;
+      height: 200px;
+      left: 62%;
+      top: 53%;
+    }
+  }
 
-  //   &::after {
-  //     content: "";
-  //     position: absolute;
-  //     width: 50px;
-  //     height: 49px;
-  //     left: 0;
-  //     top: 50%;
-  //     transform: translateY(-50%);
-  //     background-image: url("../../img/icon-cat-slim.svg");
-  //     background-position: 50%, 50%;
-  //     background-repeat: no-repeat;
-  //   }
+  .targets__title--slim {
+    &::after {
+      width: 150px;
+      height: 200px;
+      left: 65%;
+    }
+  }
 
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     width: 50px;
-  //     height: 50px;
-  //     left: 0;
-  //     top: 50%;
-  //     transform: translateY(-50%);
-  //     border-radius: 50%;
-  //     background-color: $green;
-  //   }
-  // }
-
-  // .targets__title--plump {
-  //   position: relative;
-
-  //   &::after {
-  //     content: "";
-  //     position: absolute;
-  //     width: 67px;
-  //     height: 28px;
-  //     left: -10px;
-  //     top: 50%;
-  //     transform: translateY(-50%);
-  //     background-image: url("../../img/icon-cat-pro.svg");
-  //     background-position: 50%, 50%;
-  //     background-repeat: no-repeat;
-  //   }
-
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     width: 50px;
-  //     height: 50px;
-  //     left: 0;
-  //     top: 50%;
-  //     transform: translateY(-50%);
-  //     border-radius: 50%;
-  //     background-color: $green;
-  //   }
-  // }
+  .targets__title--plump {
+    &::after {
+      width: 267px;
+      height: 118px;
+      left: 57%;
+      top: 53%;
+    }
+  }
 
   .targets__desc {
     @include font-main ($size:16px, $line:24px);
@@ -180,23 +150,96 @@
   }
 
   .targets__link {
+    @include title ($size:20px, $line:20px);
+    display: block;
+    width: 158px;
     padding-top: 0;
-    padding-right: 45px;
     border: none;
+    position: relative;
+    margin-bottom: 15px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 11px;
+      background-image: url("../../img/icon-right-arrow-long.svg");
+      right: 0;
+      top: 25%;
+    }
   }
 }
-// }
-//
-//
-//
-//
-//
-//_________DESKTOP___________/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//
-//
-//
-//
-// @media (min-width: $desktop-width) {
 
-// }
+@media (min-width: $desktop-width) {
+  .targets {
+    width: 1300px;
+    padding: 40px;
+
+    @include flex-between;
+    margin-bottom: 50px;
+  }
+
+  .targets__wrap {
+    width: 570px;
+    background-color: $background-color;
+    position: static;
+    margin-bottom: 25px;
+  }
+
+  .targets__title {
+    position: relative;
+    padding-left: 160px;
+    margin-bottom: 80px;
+  }
+
+  .targets__title--slim,
+  .targets__title--plump {
+    &::before {
+      width: 100px;
+      height: 100px;
+      left: 0;
+    }
+  }
+
+  .targets__title--slim {
+    &::after {
+      width: 70px;
+      height: 97px;
+      left: 15px;
+      top: 15px;
+    }
+  }
+
+  .targets__title--plump {
+    &::after {
+      width: 134px;
+      height: 56px;
+      left: -20px;
+      top: 22px;
+    }
+  }
+
+  .targets__desc {
+    margin-bottom: 35px;
+    width: 467px;
+  }
+
+  .targets__link {
+    @include title ($size:20px, $line:20px);
+    display: block;
+    width: 158px;
+    padding-top: 0;
+    border: none;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 11px;
+      background-image: url("../../img/icon-right-arrow-long.svg");
+      right: 0;
+      top: 25%;
+    }
+  }
+}
