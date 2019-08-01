@@ -1,5 +1,7 @@
 .targets {
   margin-bottom: 15px;
+
+  @include wrap;
 }
 
 .targets__wrap {

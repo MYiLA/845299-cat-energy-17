@@ -1,5 +1,7 @@
 .advantages {
   margin-bottom: 40px;
+
+  @include wrap;
 }
 
 .advantages__title {
@@ -19,8 +21,6 @@
 .advantages__item {
   padding: 0;
   margin: 0;
-
-  @include wrap;
   padding-left: 80px;
   margin-bottom: 25px;
   position: relative;
@@ -160,17 +160,98 @@
   }
 }
 
-//
-//
-//
-//
-//
-//_________DESKTOP___________/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//
-//
-//
-//
-// @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .advantages {
+    margin-bottom: 45px;
+    border-bottom: $border-input;
+    background-color: red;
+  }
 
-// }
+  .advantages__title {
+    margin-bottom: 74px;
+
+    @include title ($size:60px, $line:60px);
+  }
+
+  .advantages__list {
+    @include flex-between ($justify: flex-start);
+  }
+
+  .advantages__item {
+    @include font-main ($size:16px, $line:24px);
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 250px;
+    padding-top: 120px;
+    padding-bottom: 50px;
+    margin-bottom: 85px;
+    margin-right: 175px;
+
+    &:nth-child(2n+2) {
+      margin-right: 0;
+    }
+
+    &::before {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: 0;
+      transform: translateY(0);
+      left: 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .advantages__item--sheet {
+    &::after {
+      content: "1";
+      position: absolute;
+
+      @include title ($size:281px, $line:281px);
+      color: $background-color;
+      top: -39px;
+      right: 0;
+      z-index: -1;
+    }
+  }
+
+  .advantages__item--glass {
+    &::after {
+      content: "2";
+      position: absolute;
+
+      @include title ($size:281px, $line:281px);
+      color: $background-color;
+      top: -39px;
+      right: 0;
+      z-index: -1;
+    }
+  }
+
+  .advantages__item--flatware {
+    &::after {
+      content: "3";
+      position: absolute;
+
+      @include title ($size:281px, $line:281px);
+      color: $background-color;
+      top: -39px;
+      right: 0;
+      z-index: -1;
+    }
+  }
+
+  .advantages__item--clock {
+    &::after {
+      content: "4";
+      position: absolute;
+
+      @include title ($size:281px, $line:281px);
+      color: $background-color;
+      top: -39px;
+      right: 0;
+      z-index: -1;
+    }
+  }
+}

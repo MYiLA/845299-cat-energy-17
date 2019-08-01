@@ -18,6 +18,7 @@
 
 .before-after__desc {
   display: block;
+  width: 266px;
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
@@ -32,8 +33,20 @@
 }
 
 .before-after__table {
+  position: relative;
   width: 125px;
   text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 124px;
+    height: 56px;
+    border: 1px solid $gray-205;
+    border-radius: 3px;
+    top: -12px;
+    left: 0;
+  }
 }
 
 .before-after__descr {
@@ -41,6 +54,7 @@
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
+  text-align: center;
 
   @include title;
   text-transform: uppercase;
@@ -49,9 +63,13 @@
 
 .before-after__sub-descr {
   display: block;
-  margin: 0;
+  position: relative;
+  z-index: 1;
+  width: 88px;
+  margin: 0 auto;
   margin-bottom: 10px;
-  padding: 0;
+  padding: 0 13px;
+  background-color: $background-color;
 
   @include font-main ($size:12px, $line:12px);
   color: $gray-font-main;
@@ -59,6 +77,7 @@
 
 .before-after__price {
   display: block;
+  text-align: center;
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
@@ -69,7 +88,7 @@
 }
 
 .before-after__slider {
-  @include wrap;
+  margin-bottom: 40px;
 }
 
 .before-after__img {
@@ -90,17 +109,46 @@
 }
 
 .before-after__controls {
-  padding: 0;
-  padding-top: 20px;
+  position: relative;
+  padding: 0 40px;
   margin: 0;
+
+  @include flex-between;
 }
 
 .before-after__controls-item {
+  display: block;
+  padding: 0;
+  margin: 0;
+
   @include title ($size:16px, $line:20px);
+
   text-transform: uppercase;
   color: $gray-font-design;
 }
-//
+
+.before-after__range-toggle {
+  position: relative;
+  transform: translateY(0.3em);
+  width: 83px;
+  height: 12px;
+  background: $white;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px $gray-205;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 35px;
+    height: 6px;
+    background: $green;
+    border-radius: 5px;
+  }
+}
+
 //
 //
 //
