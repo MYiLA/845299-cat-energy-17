@@ -1,6 +1,6 @@
 .nav {
   @include flex-between;
-  padding-top: 11px;
+  padding-top: 12px;
 }
 
 .nav__logo {
@@ -62,12 +62,13 @@
   margin: 0;
   padding: 0;
   border-top: $border-input;
+  text-align: center;
 }
 
 .nav__link {
-  display: block;
+  display: inline-block;
   width: auto;
-  text-align: center;
+  vertical-align: baseline;
   margin: 0;
   padding: 0;
   padding-top: 20px;
@@ -104,12 +105,14 @@
 @media (min-width: $tablet-width) {
   .nav {
     @include flex-between;
-    padding-top: 24px;
+    padding-top: 25px;
   }
 
   .nav__logo {
     width: 154px;
     height: 65px;
+    background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
   }
 
   .nav__menu-btn {
@@ -117,26 +120,22 @@
   }
 
   .nav__list {
-    @include flex-between ($justify: flex-start);
-    width: 530px;
-    padding-left: 90px;
+    @include flex-between;
+    padding-top: 25px;
+    width: 516px;
   }
 
   .nav__item {
-    margin-right: 34px;
+    width: 160px;
     border: none;
-
-    &:nth-child(3n+3) {
-      margin-right: 0;
-    }
-
-    &:nth-child(3n+1) .nav__link {
-      text-align: right;
-    }
+    text-align: right;
   }
 
   .nav__link {
-    width: auto;
+    padding: 0;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border: none;
 
     @include title ($size:18px, $line:25px);
   }
@@ -151,10 +150,17 @@
   .nav__logo {
     width: 205px;
     height: 60px;
+    background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
+  }
+
+  .nav__menu-btn {
+    @include visually-hidden;
   }
 
   .nav__list {
-    width: 650px;
+    padding-top: 16px;
+    width: 594px;
   }
 
   .nav__list--white {
@@ -168,11 +174,12 @@
   }
 
   .nav__item {
-    margin-right: 58px;
+    width: 172px;
   }
 
   .nav__link {
-    text-align: right;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
     font-size: 20px;
   }
 }

@@ -7,9 +7,13 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }

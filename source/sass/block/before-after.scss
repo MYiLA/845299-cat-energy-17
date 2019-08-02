@@ -166,6 +166,7 @@
 
   .before-after__wrap {
     @include flex-between ($justify: flex-start);
+    @include wrap;
   }
 
   .before-after__title {
@@ -229,6 +230,8 @@
   .before-after__img--before {
     width: 677px;
     height: 499px;
+    background: rgba(23, 32, 23, 0.2);
+  box-shadow: 0 0 0 3px green;
   }
 
   .before-after__img--after {
@@ -279,15 +282,21 @@
 @media (min-width: $desktop-width) {
   .before-after {
     margin-bottom: 0;
+    @include flex-between;
   }
-
   .before-after__wrap {
     @include flex-between;
   }
 
-  .before-after__wrap--desktop {
+  .before-after__wrap-desc {
+    @include flex-between;
     width: 570px;
     margin-right: 40px;
+  }
+
+  .before-after__wrap-slider {
+    @include flex-between;
+    width: 570px;
   }
 
   .before-after__title {
