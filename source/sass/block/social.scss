@@ -1,59 +1,50 @@
 .social {
-  @include flex-between ($justify: flex-start);
+  @include flex-between ($justify: center);
   @include list-reset;
   width: 280px;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding: 20px 0;
+  margin: 0 auto;
   border-top: 1px solid rgb(217, 217, 217);
   border-bottom: 1px solid rgb(217, 217, 217);
 }
 
 .social__item {
-  display: block;
+  margin-right: 35px;
+
+  &:nth-child(3n+3) {
+    margin: 0;
+  }
 }
 
 .social__btn {
-  display: block;
-  margin: 0;
-  padding: 20px;
-  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
 }
 
 @media (min-width: $tablet-width) {
   .social {
+    padding: 0;
     width: 324px;
-    padding: 0 75px;
     border: none;
     margin-right: 30px;
   }
 
+  .social__item {
+    margin-right: 25px;
+  }
+
   .social__btn {
-    padding: 0;
     width: 30px;
     height: 30px;
-    margin-right: 20px;
-
-    &:nth-child(3n+3) {
-      margin: 0;
-    }
-
-    background: rgba(0, 128, 0, 0.2);
-    box-shadow: 0 0 0 3px green;
   }
-}
-
-.social__btn img {
-  display: block;
-  padding: 0;
-  margin: 0 auto;
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
 }
 
 @media (min-width: $desktop-width) {
   .social {
     width: 570px;
-    padding: 0 213px;
     border: none;
     margin-right: 160px;
   }
