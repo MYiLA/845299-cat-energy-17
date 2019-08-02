@@ -231,7 +231,7 @@
     width: 677px;
     height: 499px;
     background: rgba(23, 32, 23, 0.2);
-  box-shadow: 0 0 0 3px green;
+    box-shadow: 0 0 0 3px green;
   }
 
   .before-after__img--after {
@@ -281,9 +281,10 @@
 
 @media (min-width: $desktop-width) {
   .before-after {
-    margin-bottom: 0;
     @include flex-between;
+    margin-bottom: 0;
   }
+
   .before-after__wrap {
     @include flex-between;
   }

@@ -151,6 +151,10 @@
     width: 375px;
   }
 
+  .targets__desc--tablet {
+    width: 343px;
+  }
+
   .targets__link {
     @include title ($size:20px, $line:20px);
     display: block;
