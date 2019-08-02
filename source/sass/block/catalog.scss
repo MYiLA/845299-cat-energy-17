@@ -21,7 +21,7 @@
 
 .catalog__main-list {
   @include list-reset;
-  margin-bottom: 80px;
+  margin-bottom: 25px;
 }
 
 .catalog__main-item {
@@ -30,6 +30,10 @@
   &:nth-last-child {
     border-bottom: $border-lite;
   }
+}
+
+.catalog__main-item--more {
+padding-top: 24px;
 }
 
 .catalog__article {
@@ -41,6 +45,7 @@
   display: block;
   margin: 0;
   padding: 0;
+  padding-top: 58px;
   margin-bottom: 10px;
   text-align: center;
 
@@ -98,20 +103,48 @@
     background-position-x: 50%;
   }
 }
-//
-//
-//
-//
-//
 //_________TABLET__________////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//
-//
-//
-//
-// @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    margin-bottom: 90px;
 
-// }
+    @include title ($size:60px, $line:60px);
+  }
+
+  .catalog__main-products {
+    margin: 0;
+    border: none;
+  }
+
+  .catalog__main-list {
+    margin-bottom: 71px;
+    width: 708px;
+
+    @include flex-between;
+  }
+
+  .catalog__main-item {
+    width: 324px;
+    border: $border-lite;
+    border-color: $background-color;
+
+    &:nth-last-child {
+      border-color: $background-color;
+    }
+  }
+
+  .catalog__main-item--more {
+  padding-top: 60px;
+  border: $border-lite;
+  background-color: white;
+  }
+
+  .catalog__article {
+    padding: 0;
+    margin: 0;
+    background-color: $background-color;
+  }
+}
 //
 //
 //
