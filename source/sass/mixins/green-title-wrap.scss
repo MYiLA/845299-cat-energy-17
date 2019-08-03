@@ -12,7 +12,7 @@
     width: 100vw;
     position: absolute;
     top: 0.5em;
-    background: green;
+    background: $green;
   }
 
   @media (min-width: $tablet-width) {
@@ -24,7 +24,7 @@
       right: 0;
       position: absolute;
       top: 0.5em;
-      background: green;
+      background: $green;
     }
   }
 }

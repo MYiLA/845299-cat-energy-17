@@ -1,5 +1,5 @@
 .additional-products {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .additional-products__title {
@@ -78,24 +78,16 @@
 //
 //_________TABLET__________////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//
-//
-//
-//
-// @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .additional-products {
+    margin-bottom: 80px;
+  }
+}
 
-// }
-//
-//
-//
-//
-//
 //_________DESKTOP___________/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//
-//
-//
-//
-// @media (min-width: $desktop-width) {
-
-// }
+@media (min-width: $desktop-width) {
+  .additional-products {
+    margin-bottom: 85px;
+  }
+}
