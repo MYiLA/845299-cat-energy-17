@@ -20,7 +20,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -31,4 +31,8 @@ input[type="radio"].visually-hidden {
 
 .wrap {
   @include wrap;
+}
+
+.green-title-wrap {
+  @include green-title-wrap;
 }

@@ -79,9 +79,11 @@
           </label>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="form__legend">
-            Контактные данные (владельца кота)
+          <div class="green-title-wrap">
+            <legend class="form__legend">
+            Контактные данные&nbsp<span>(владельца кота)</span>
           </legend>
+          </div>
           <label class="form__label" for="form-email">
             E-mail:*
           </label>
@@ -93,16 +95,20 @@
           <input class="form__input" type="tel" id="form-tel" name="tel" placeholder="8 (960) 900-60-90" required>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="form__legend" for="form-comment">
+            <div class="green-title-wrap">
+              <label class="form__legend" for="form-comment">
             Комментарий
-          </legend>
+          </label>
+            </div>
           <textarea class="form__input-textarea" id="form-comment" name="comment"
             placeholder="Расскажите обо всех повадках кота" rows="7"></textarea>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="form__legend">
+            <div class="green-title-wrap">
+              <legend class="form__legend">
             Дополнительно
           </legend>
+            </div>
           <input class="visually-hidden" type="checkbox" id="additional-sweetener" name="sweetener" checked>
           <label class="form__label-checkbox" for="additional-sweetener">Сахарозаменитель</label>
           <input class="visually-hidden" type="checkbox" id="additional-water" name="water">
