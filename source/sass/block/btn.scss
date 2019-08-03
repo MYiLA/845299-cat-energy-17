@@ -1,13 +1,13 @@
 .btn {
   display: block;
-  padding-top: 12px;
-  padding-right: 29px;
+  padding-top: 13px;
+  padding-right: 27px;
   padding-bottom: 13px;
-  padding-left: 26px;
+  padding-left: 29px;
   border: none;
   text-align: center;
 
-  @include title ($size:19px, $line:25px);
+  @include title ($size:16px, $line:20px);
   color: $white;
   text-transform: uppercase;
   background-color: rgb(104, 183, 56);
@@ -28,15 +28,5 @@
 
   &:active {
     color: rgba(68, 68, 68, 0.3);
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .btn {
-    @include title ($size:20px, $line:20px);
-    padding-top: 17px;
-    padding-right: 27px;
-    padding-bottom: 18px;
-    padding-left: 29px;
   }
 }

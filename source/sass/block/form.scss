@@ -122,6 +122,12 @@
 @media (min-width: $tablet-width) {
   .form__submit {
     width: 100%;
+
+    @include title ($size:20px, $line:20px);
+    padding-top: 17px;
+    padding-right: 27px;
+    padding-bottom: 18px;
+    padding-left: 29px;
   }
 }
 //
