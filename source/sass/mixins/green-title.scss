@@ -1,28 +1,28 @@
-@mixin green-title ($size:24px $line:24px) {
-  position: relative;
+@mixin green-title ($size:24px, $line:24px) {
+  margin: 0;
+  padding: 0;
+  padding-right: 24px;
+  background: white;
+  z-index: 2;
   font-family: $font-design;
   font-size: $size;
   font-weight: 400;
   line-height: $line;
-  color: rgb(17, 17, 17);
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 250px;
 
-  &::after {
-    content: "";
-    height: 3px;
-    margin-left: 25px;
-    flex-grow: 1;
-    background-color: $green;
-    transform: translateY(4px);
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    max-width: 600px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    right: -100%;
-    background-color: $green;
-    transform: translateY(4px);
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
   }
 }
+//_________DESKTOP___________/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//

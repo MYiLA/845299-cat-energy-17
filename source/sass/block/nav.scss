@@ -1,7 +1,6 @@
 .nav {
   @include flex-between;
-  background-color: $white;
-  padding-top: 11px;
+  padding-top: 12px;
 }
 
 .nav__logo {
@@ -19,7 +18,6 @@
     opacity: 0.6;
   }
 }
-
 
 .nav__menu-btn {
   width: 25px;
@@ -58,30 +56,30 @@
 .nav__list {
   @include list-reset;
   width: 100%;
+  border-bottom: $border-input;
 }
 
 .nav__item {
   margin: 0;
   padding: 0;
-  padding-top: 5px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 5px;
   border-top: $border-input;
+  text-align: center;
 }
 
 .nav__link {
-  display: block;
-  text-align: center;
+  display: inline-block;
+  width: auto;
+  vertical-align: baseline;
   margin: 0;
-  padding-top: 10px;
-  padding-left: 10px;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 
-  @include title ($size:20px $line:20px);
+  @include title ($size:20px, $line:20px);
+  position: relative;
   color: $black;
   text-transform: uppercase;
-  background-color: $white;
-  border-bottom: 2px solid rgba(255, 255, 255, 0);
 
   &:hover,
   &:focus {
@@ -92,8 +90,97 @@
     opacity: 0.3;
   }
 
-  &:not([href]) {
-    border-bottom: 2px solid $black;
+  &:not([href])::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
     opacity: 1;
+    background-color: $green;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nav {
+    @include flex-between;
+    padding-top: 25px;
+  }
+
+  .nav__logo {
+    width: 154px;
+    height: 65px;
+    background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
+  }
+
+  .nav__menu-btn {
+    @include visually-hidden;
+  }
+
+  .nav__list {
+    @include flex-between;
+    padding-top: 25px;
+    width: 516px;
+    border: none;
+  }
+
+  .nav__item {
+    width: 160px;
+    border: none;
+    text-align: right;
+  }
+
+  .nav__link {
+    padding: 0;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border: none;
+
+    @include title ($size:18px, $line:25px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav {
+    padding-top: 55px;
+    margin-bottom: 100px;
+  }
+
+  .nav__logo {
+    width: 205px;
+    height: 60px;
+    background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
+  }
+
+  .nav__menu-btn {
+    @include visually-hidden;
+  }
+
+  .nav__list {
+    padding-top: 16px;
+    width: 594px;
+  }
+
+  .nav__list--white {
+    .nav__link {
+      color: $white;
+
+      &:not([href])::after {
+        background-color: $white;
+      }
+    }
+  }
+
+  .nav__item {
+    width: 172px;
+  }
+
+  .nav__link {
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    font-size: 20px;
   }
 }

@@ -1,7 +1,9 @@
 .main-good {
-  padding-top: 20px;
   padding-bottom: 24px;
-  background-color: $white;
+  background-color: transparent;
+
+  @include flex-between;
+  align-items: center;
 }
 
 .main-good__img-link {
@@ -9,36 +11,36 @@
   margin: 0;
 }
 
+.main-good__wrap {
+  width: 140px;
+}
+
 .main-good__title-link {
   width: 140px;
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
 }
 
 .main-good__title {
   width: 87px;
   padding: 0;
   margin: 0;
+  margin-bottom: 16px;
   text-align: left;
 
-  @include title ($size:16px $line:20px);
+  @include title ($size:16px, $line:20px);
   color: $gray-font-design;
   text-transform: uppercase;
 }
 
 .main-good__table {
+  width: 140px;
   padding: 0;
   margin: 0;
-  margin-bottom: 23px;
 }
 
 .main-good__table-row {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 5px;
-
-  @include font-main ($size:12px $line:16px);
+  @include font-main ($size:12px, $line:16px);
   color: $gray-font-main;
 }
 
@@ -55,5 +57,71 @@
 }
 
 .main-good__btn {
+  width: 100%;
   margin: 0;
 }
+
+//_________TABLET__________////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media (min-width: $tablet-width) {
+  .main-good {
+    padding-top: 164px;
+    padding-bottom: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
+    justify-content: center;
+    position: relative;
+    background-color: $background-color;
+  }
+
+  .main-good__img-link {
+    margin-bottom: 45px;
+    position: absolute;
+    bottom: 60%;
+  }
+
+  .main-good__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .main-good__title {
+    width: 130px;
+    margin-bottom: 16px;
+    text-align: center;
+
+    @include title ($size:20px, $line:20px);
+  }
+
+  .main-good__table {
+    width: 100%;
+    margin-bottom: 35px;
+    border-collapse: collapse;
+  }
+
+  .main-good__table-row {
+    @include font-main ($size:16px, $line:16px);
+    border-bottom: 1px solid $gray-205;
+  }
+
+  .main-good__table-name {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+//
+//
+//
+//
+//
+//_________DESKTOP___________/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+//
+//
+//
+// @media (min-width: $desktop-width) {
+
+// }

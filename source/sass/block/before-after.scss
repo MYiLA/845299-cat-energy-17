@@ -9,15 +9,14 @@
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
-  font-family: $font-design;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 60px;
+
+  @include title ($size:36px, $line:60px);
   color: $gray-font-design;
 }
 
 .before-after__desc {
   display: block;
+  width: 266px;
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
@@ -32,8 +31,21 @@
 }
 
 .before-after__table {
+  position: relative;
   width: 125px;
   text-align: center;
+  margin-bottom: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 124px;
+    height: 56px;
+    border: 1px solid $gray-205;
+    border-radius: 3px;
+    top: -12px;
+    left: 0;
+  }
 }
 
 .before-after__descr {
@@ -41,6 +53,7 @@
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
+  text-align: center;
 
   @include title;
   text-transform: uppercase;
@@ -49,27 +62,31 @@
 
 .before-after__sub-descr {
   display: block;
-  margin: 0;
-  margin-bottom: 10px;
-  padding: 0;
+  position: relative;
+  z-index: 1;
+  width: 88px;
+  margin: 0 auto;
+  padding: 0 13px;
+  background-color: $background-color;
 
-  @include font-main ($size:12px $line:12px);
+  @include font-main ($size:12px, $line:12px);
   color: $gray-font-main;
 }
 
 .before-after__price {
   display: block;
+  text-align: center;
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
 
-  @include title ($size:14px $line:20px);
+  @include title ($size:14px, $line:20px);
   text-transform: uppercase;
   color: $gray-font-design;
 }
 
 .before-after__slider {
-  width: 280px;
+  margin-bottom: 40px;
 }
 
 .before-after__img {
@@ -79,23 +96,234 @@
 
 .before-after__img--before {
   display: block;
-  margin: 0;
-  padding: 0;
 }
 
 .before-after__img--after {
   display: none;
-  margin: 0;
-  padding: 0;
 }
 
 .before-after__controls {
-  padding: 0;
+  position: relative;
+  padding: 0 40px;
   margin: 0;
+
+  @include flex-between;
 }
 
 .before-after__controls-item {
-  @include title ($size:16px $line:20px);
+  display: block;
+  padding: 0;
+  margin: 0;
+
+  @include title ($size:16px, $line:20px);
+
   text-transform: uppercase;
   color: $gray-font-design;
+}
+
+.before-after__range-toggle {
+  position: relative;
+  transform: translateY(0.3em);
+  width: 83px;
+  height: 12px;
+  background: $white;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px $gray-205;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 35px;
+    height: 6px;
+    background: $green;
+    border-radius: 5px;
+  }
+}
+
+//_________TABLET___________/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media (min-width: $tablet-width) {
+  .before-after {
+    background-color: transparent;
+    padding-top: 0;
+    position: relative;
+    padding-bottom: 68px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 461px;
+      bottom: 0;
+      z-index: -1;
+      background-color: $background-color;
+    }
+  }
+
+  .before-after__wrap {
+    @include flex-between ($justify: flex-start);
+    @include wrap;
+  }
+
+  .before-after__title {
+    margin-bottom: 65px;
+
+    @include title ($size:60px, $line:60px);
+  }
+
+  .before-after__desc {
+    width: 680px;
+    margin-bottom: 70px;
+
+    @include font-main ($size:16px, $line:24px);
+  }
+
+  .before-after__container {
+    width: 368px;
+    margin-bottom: 70px;
+  }
+
+  .before-after__table {
+    width: 162px;
+
+    &::after {
+      width: 162px;
+      height: 72px;
+      top: -16px;
+    }
+  }
+
+  .before-after__descr {
+    margin-bottom: 10px;
+
+    @include title ($size:30px, $line:37px);
+  }
+
+  .before-after__sub-descr {
+    display: inline-block;
+    vertical-align: baseline;
+    width: auto;
+    padding: 0 10px;
+    background-color: $white;
+
+    @include font-main ($size:14px, $line:14px);
+  }
+
+  .before-after__price {
+    margin: 0;
+    margin-left: 145px;
+    padding: 0;
+    width: 190px;
+    text-align: right;
+
+    @include title ($size:20px, $line:20px);
+  }
+
+  .before-after__img {
+    margin-bottom: 25px;
+  }
+
+  .before-after__img--before {
+    width: 677px;
+    height: 499px;
+    background: rgba(23, 32, 23, 0.2);
+    box-shadow: 0 0 0 3px green;
+  }
+
+  .before-after__img--after {
+    width: 545px;
+    height: 517px;
+  }
+
+  .before-after__controls {
+    width: 608px;
+    padding: 0 70px;
+  }
+
+  .before-after__controls-item {
+    padding-bottom: 8px;
+    font-size: 20px;
+    border-bottom: 1px dotted rgb(190, 190, 190);
+  }
+
+  .before-after__range-toggle {
+    width: auto;
+    margin: 0 19px;
+    top: 0.3em;
+    height: 6px;
+    background: rgb(220, 220, 220);
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    flex-grow: 1;
+
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+      top: -200%;
+      width: 32px;
+      height: 32px;
+      background: $green;
+      border: 12px solid $white;
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.15),
+        0 2px 5px 1px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+//_________DESKTOP___________/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: $desktop-width) {
+  .before-after {
+    @include flex-between;
+  }
+
+  .before-after__wrap {
+    @include flex-between;
+  }
+
+  .before-after__wrap-desc {
+    @include flex-between;
+    width: 570px;
+    margin-right: 40px;
+  }
+
+  .before-after__wrap-slider {
+    @include flex-between;
+    width: 570px;
+  }
+
+  .before-after__title {
+    margin-bottom: 150px;
+  }
+
+  .before-after__desc {
+    width: 440px;
+    margin-bottom: 90px;
+  }
+
+  .before-after__container {
+    margin-bottom: 55px;
+  }
+
+  .before-after__price {
+    margin-left: 0;
+    width: 325px;
+
+    @include flex-between;
+  }
+
+  .before-after__img {
+    margin-bottom: 45px;
+  }
+
+  .before-after__controls {
+    width: 610px;
+    padding: 0;
+    padding-left: 40px;
+  }
 }

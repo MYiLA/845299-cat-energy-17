@@ -22,7 +22,7 @@
   margin-bottom: 20px;
   text-align: center;
 
-  @include title ($size:36px $line:36px);
+  @include title ($size:36px, $line:36px);
   color: $white;
 }
 
@@ -30,18 +30,104 @@
   display: block;
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
   text-align: center;
 
-  @include title ($size:14px $line:14px);
+  @include title ($size:14px, $line:14px);
   color: $white;
   text-transform: uppercase;
 }
 
-.promo__img {
-  margin: 0;
-  padding: 0;
+.promo__btn {
+  @include title ($size:20px, $line:20px);
+  padding-top: 17px;
+  padding-right: 27px;
+  padding-bottom: 18px;
+  padding-left: 29px;
 }
 
-.promo__btn {
-  margin: 0;
+@media (min-width: $tablet-width) {
+  .promo {
+    position: relative;
+    margin-bottom: 0;
+
+    &::before {
+      background-image: none;
+      background-color: transparent;
+    }
+  }
+
+  .promo__wrap {
+    padding-left: 90px;
+  }
+
+  .promo__title {
+    @include title ($size:60px, $line:60px);
+    width: 425px;
+    margin-bottom: 45px;
+    text-align: left;
+    color: $black;
+  }
+
+  .promo__slogan {
+    @include title ($size:20px, $line:20px);
+    text-align: left;
+    color: $black;
+    margin-bottom: 50px;
+  }
+
+  .promo__img {
+    position: absolute;
+    width: 619px;
+    height: 609px;
+    z-index: -1;
+    bottom: 0;
+    left: 14%;
+  }
+
+  .promo__btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: baseline;
+    margin-bottom: 525px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    position: static;
+    margin-bottom: 170px;
+
+    &::before {
+      z-index: -2;
+      width: 50%;
+      height: 700px;
+      right: 0;
+      background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-color: rgb(101, 169, 60);
+      background-position-x: 0;
+    }
+  }
+
+  .promo__wrap {
+    padding-left: 80px;
+    position: relative;
+  }
+
+  .promo__slogan {
+    margin-bottom: 53px;
+  }
+
+  .promo__img {
+    width: 552px;
+    height: 499px;
+    position: absolute;
+    bottom: -22%;
+    left: 39%;
+  }
+
+  .promo__btn {
+    position: static;
+    margin-bottom: 10px;
+  }
 }

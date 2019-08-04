@@ -1,7 +1,6 @@
 .catalog {
   padding: 0;
   margin: 0;
-  background-color: $white;
 }
 
 .catalog__title {
@@ -9,8 +8,9 @@
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
+  padding-top: 30px;
 
-  @include title ($size:36px $line:60px);
+  @include title ($size:36px, $line:60px);
   color: $gray-font-design;
 }
 
@@ -21,7 +21,7 @@
 
 .catalog__main-list {
   @include list-reset;
-  margin-bottom: 80px;
+  margin-bottom: 25px;
 }
 
 .catalog__main-item {
@@ -30,6 +30,10 @@
   &:nth-last-child {
     border-bottom: $border-lite;
   }
+}
+
+.catalog__main-item--more {
+  padding-top: 24px;
 }
 
 .catalog__article {
@@ -41,10 +45,11 @@
   display: block;
   margin: 0;
   padding: 0;
+  padding-top: 58px;
   margin-bottom: 10px;
   text-align: center;
 
-  @include title ($size:16px $line:20px);
+  @include title ($size:16px, $line:20px);
   text-transform: uppercase;
   color: $gray-font-design;
 }
@@ -56,17 +61,16 @@
   margin-bottom: 20px;
   text-align: center;
 
-  @include font-main ($size:12px $line:16px);
+  @include font-main ($size:12px, $line:16px);
   color: $gray-font-main;
 }
 
 .catalog__event {
-  width: 280px;
   min-height: 290px;
-  margin-bottom: 36px;
-  // padding-bottom: 65px; не работает паддинг((( не могу опустить вниз деск. В чем тут ошибка?
+  padding-top: 65px;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position-x: 0;
   background-color: $green;
 }
 
@@ -81,7 +85,7 @@
   transform: translateX(-50%);
   text-align: center;
 
-  @include font-main ($size:16px $line:20px);
+  @include font-main ($size:16px, $line:20px);
   color: $white;
   position: relative;
 
@@ -89,12 +93,126 @@
     content: "";
     position: absolute;
     width: 55px;
-    height: 50px;
+    height: 60px;
     top: 0;
     left: 25px;
     transform: translateX(50%);
     background-image: url("../../img/icon-gift.svg");
     background-repeat: no-repeat;
     background-position-x: 50%;
+  }
+}
+
+//_________TABLET__________////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    margin-bottom: 20px;
+
+    @include title ($size:60px, $line:60px);
+  }
+
+  .catalog__main-products {
+    margin: 0;
+    border: none;
+  }
+
+  .catalog__main-list {
+    margin-bottom: 71px;
+    width: 708px;
+
+    @include flex-between;
+  }
+
+  .catalog__main-item {
+    border-top: none;
+    padding-top: 144px;
+
+    &:nth-last-child {
+      border: none;
+    }
+  }
+
+  .catalog__article {
+    width: 324px;
+  }
+
+  .catalog__main-item--more {
+    width: 324px;
+    padding-top: 55px;
+    padding-left: 39px;
+    padding-right: 39px;
+    padding-bottom: 40px;
+    border: $border-lite;
+    border-radius: 3px;
+  }
+
+  .catalog__more {
+    width: 142px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 110px;
+    margin-bottom: 30px;
+
+    @include title ($size:20px, $line:20px);
+  }
+
+  .catalog__more-desc {
+    width: 170px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+    @include font-main ($size:16px, $line:16px);
+    color: $gray-font-main;
+  }
+
+  .catalog__event {
+    min-height: 200px;
+    padding-left: 60px;
+    padding-right: 120px;
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .catalog__event-desc {
+    margin: 0;
+    padding: 0;
+    width: 525px;
+    display: block;
+    padding-left: 360px;
+    transform: translateX(0);
+    text-align: left;
+  }
+}
+
+//_________DESKTOP___________/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: $desktop-width) {
+  .catalog__main-list {
+    margin-bottom: 80px;
+    width: 1220px;
+  }
+
+  .catalog__article {
+    width: 245px;
+  }
+
+  .catalog__main-item--more {
+    width: 245px;
+  }
+
+  .catalog__event {
+    width: 245px;
+    min-height: 290px;
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 45px;
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+  }
+
+  .catalog__event-desc {
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 125px;
+    width: 165px;
+    text-align: center;
   }
 }
