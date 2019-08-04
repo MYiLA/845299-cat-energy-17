@@ -7,7 +7,8 @@
   display: block;
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  padding-top: 25px;
+  margin-bottom: 30px;
   text-align: left;
 
   @include title ($size:36px, $line:60px);
@@ -15,6 +16,7 @@
 }
 
 .form__desc {
+  width: 235px;
   display: block;
   margin: 0;
   padding: 0;
@@ -31,14 +33,50 @@
 }
 
 .form__fieldset {
+  width: 100%;
   margin: 0;
   padding: 0;
   border: none;
+  margin-bottom: 9px;
+}
 
+.form__wrap {
   @include flex-between;
+  align-items: center;
+  margin-bottom: 15px;
+  position: relative;
+
+  &--email {
+    &::before {
+      content: "";
+      display: block;
+      width: 17px;
+      height: 13px;
+      position: absolute;
+      right: 16px;
+      z-index: 1;
+      background-color: red;
+      //background-image: url("../../img/advantage-powder@1x.png") пока нет иконки
+    }
+  }
+
+  &--tel {
+    &::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 13px;
+      z-index: 1;
+      background-color: red;
+      //background-image: url("../../img/advantage-powder@1x.png") пока нет иконки
+    }
+  }
 }
 
 .form__label {
+  width: auto;
   margin: 0;
   padding: 0;
   padding-top: 15px;
@@ -52,21 +90,38 @@
 }
 
 .form__input {
-  width: 140px;
   padding: 0;
   margin: 0;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   flex-grow: 1;
   border: $border-input;
 
   @include title ($size:16px, $line:18px);
   color: $gray-font-main;
   text-transform: uppercase;
+
+  &::placeholder {
+    color: rgb(68, 68, 68);
+  }
+
+  &--email {
+    padding-right: 40px;
+    position: relative;
+  }
+
+  &--tel {
+    padding-right: 40px;
+    position: relative;
+  }
 }
 
 .form__targets {
   display: block;
+  padding-top: 26px;
+  margin-bottom: 32px;
   border: none;
   border-top: $border-input;
   border-bottom: $border-input;
@@ -75,10 +130,38 @@
 .form__label-radio {
   display: block;
   padding-left: 45px;
+  margin-bottom: 26px;
+  position: relative;
 
   @include title ($size:16px, $line:18px);
   color: rgb(34, 34, 34);
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: $white;
+    border: 9px solid $white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px $gray-205;
+  }
+
+  .form__targets input:checked + &::before {
+    background-color: $green;
+  }
+
+  .form__targets input:disabled + &::before {
+    opacity: 0.3;
+  }
+
+  .form__targets input:focus + &::before {
+    filter: drop-shadow(0 0 4px rgb(255, 74, 2));
+  }
 }
 
 .form__legend {
@@ -87,27 +170,66 @@
 }
 
 .form__input-textarea {
+  width: 100%;
   padding: 0;
   margin: 0;
   padding-top: 15px;
-  padding-right: 15px;
+  padding-right: 13px;
   padding-bottom: 15px;
-  padding-left: 15px;
-  margin-bottom: 32px;
+  padding-left: 13px;
+  margin-bottom: 25px;
   border: $border-input;
 
   @include title ($size:16px, $line:18px);
   color: $gray-font-main;
   text-transform: uppercase;
+
+  &::placeholder {
+    color: rgb(68, 68, 68);
+  }
 }
 
 .form__label-checkbox {
   display: block;
   padding-left: 45px;
+  margin-bottom: 29px;
 
   @include title ($size:16px, $line:18px);
   color: rgb(34, 34, 34);
   text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: $white;
+    box-shadow: 0 0 0 1px $gray-205;
+  }
+
+  .form__fieldset input:checked + &::before {
+    background-image: url("../../img/icon-tick.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 21px 16px;
+  }
+
+  .form__fieldset input:disabled + &::before {
+    opacity: 0.3;
+  }
+
+  .form__fieldset input:focus + &::before {
+    filter: drop-shadow(0 0 4px rgb(255, 74, 2));
+  }
+}
+
+.form__submit {
+  width: 100%;
+  margin-bottom: 23px;
 }
 
 .form__required {
@@ -121,8 +243,6 @@
 
 @media (min-width: $tablet-width) {
   .form__submit {
-    width: 100%;
-
     @include title ($size:20px, $line:20px);
     padding-top: 17px;
     padding-right: 27px;
@@ -130,31 +250,215 @@
     padding-left: 29px;
   }
 }
-//
-//
-//
-//
-//
+
 //_________TABLET__________////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//
-//
-//
-//
-// @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .form__title {
+    padding-top: 55px;
+    margin-bottom: 55px;
 
-// }
-//
-//
-//
-//
-//
+    @include title ($size:60px, $line:60px);
+  }
+
+  .form__desc {
+    width: 330px;
+    margin-left: 40px;
+    margin-bottom: 70px;
+
+    @include title ($size:20px, $line:30px);
+  }
+
+  .form__form {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 73px;
+  }
+
+  .form__fieldset {
+    margin-bottom: 50px;
+  }
+
+  .form__wrap {
+    margin-bottom: 22px;
+
+    &--email {
+      &::before {
+        right: 20px;
+      }
+    }
+
+    &--tel {
+      &::before {
+        right: 17px;
+      }
+    }
+
+    &--flex {
+      width: 670px;
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .form__label {
+    padding-top: 16px;
+    padding-bottom: 17px;
+    margin-right: 20px;
+
+    @include title ($size:20px, $line:20px);
+  }
+
+  .form__input {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 21px;
+    padding-right: 21px;
+
+    @include title ($size:20px, $line:20px);
+
+    &--email {
+      padding-right: 55px;
+    }
+
+    &--tel {
+      padding-right: 55px;
+    }
+  }
+
+  .form__targets {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 81px;
+    border: $border-input;
+  }
+
+  .form__label-radio {
+    padding-left: 64px;
+    margin-bottom: 33px;
+
+    @include title ($size:20px, $line:20px);
+
+    &::before {
+      left: 0;
+      width: 38px;
+      height: 38px;
+      border: 10px solid $white;
+    }
+  }
+
+  .form__legend {
+    @include green-title;
+    margin-bottom: 70px;
+    margin-left: -40px;
+  }
+
+  .form__input-textarea {
+    padding-top: 17px;
+    padding-right: 20px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+
+    @include title ($size:20px, $line:30px);
+  }
+
+  .form__label-checkbox {
+    width: 324px;
+    padding-left: 60px;
+    margin-bottom: 50px;
+
+    @include title ($size:20px, $line:20px);
+
+    &::before {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  .form__submit {
+    display: inline-block;
+    width: 285px;
+    margin-bottom: 0;
+
+    @include title ($size:20px, $line:20px);
+    padding-top: 17px;
+    padding-right: 27px;
+    padding-bottom: 18px;
+    padding-left: 29px;
+  }
+
+  .form__required {
+    margin: 0;
+    width: 324px;
+    text-align: left;
+    margin-bottom: 0;
+
+    @include font-main ($size:16px, $line:16px);
+  }
+}
 //_________DESKTOP___________/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//
-//
-//
-//
-// @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .form__title {
+    padding-top: 0;
+  }
 
-// }
+  .form__desc {
+    width: 330px;
+    margin-left: 0;
+  }
+
+  .form__form {
+    padding-left: 0;
+  }
+
+  .form__fieldset {
+    margin-bottom: 50px;
+
+    &--small {
+      width: 570px;
+    }
+  }
+
+  .form__wrap {
+    width: 570px;
+
+    &--flex {
+      width: 1220px;
+    }
+
+    &--desktop {
+      width: 1220px;
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .form__targets {
+    width: 570px;
+  }
+
+  .form__input-textarea {
+    width: 1220px;
+  }
+
+  .form__label-checkbox {
+    width: 245px;
+    margin-bottom: 66px;
+  }
+
+  .form__submit {
+    width: 570px;
+  }
+
+  .form__required {
+    width: 570px;
+  }
+}
