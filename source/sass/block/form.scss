@@ -37,7 +37,6 @@
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 9px;
 }
 
 .form__wrap {
@@ -90,12 +89,13 @@
 }
 
 .form__input {
+  width: auto;
   padding: 0;
   margin: 0;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
   flex-grow: 1;
   border: $border-input;
 
@@ -105,6 +105,7 @@
 
   &::placeholder {
     color: rgb(68, 68, 68);
+    text-overflow: ellipsis;
   }
 
   &--email {
@@ -186,6 +187,7 @@
 
   &::placeholder {
     color: rgb(68, 68, 68);
+    text-overflow: ellipsis;
   }
 }
 
@@ -248,12 +250,14 @@
     padding-right: 27px;
     padding-bottom: 18px;
     padding-left: 29px;
+    margin-bottom: 10px;
   }
 }
 
 //_________TABLET__________////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width: $tablet-width) {
   .form__title {
+    width: 450px;
     padding-top: 55px;
     margin-bottom: 55px;
 
@@ -382,7 +386,6 @@
   .form__submit {
     display: inline-block;
     width: 285px;
-    margin-bottom: 0;
 
     @include title ($size:20px, $line:20px);
     padding-top: 17px;
@@ -402,6 +405,10 @@
 }
 //_________DESKTOP___________/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width: $desktop-width) {
+  .form {
+    margin-bottom: 90px;
+  }
+  
   .form__title {
     padding-top: 0;
   }
@@ -416,32 +423,47 @@
   }
 
   .form__fieldset {
-    margin-bottom: 50px;
+    margin: 0;
 
     &--small {
       width: 570px;
+      margin: 0;
     }
   }
 
   .form__wrap {
     width: 570px;
 
+    &--email {
+      margin: 0;
+    }
+
+    &--tel {
+      margin: 0;
+    }
+
     &--flex {
       width: 1220px;
+      justify-content: flex-start;
     }
 
     &--desktop {
       width: 1220px;
-      margin-bottom: 0;
+      margin-bottom: 75px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      align-items: center;
+      align-items: stretch;
+    }
+
+    &:last-child {
+      margin: 0;
     }
   }
 
   .form__targets {
+    margin: 0;
     width: 570px;
   }
 
@@ -452,10 +474,16 @@
   .form__label-checkbox {
     width: 245px;
     margin-bottom: 66px;
+    margin-right: 80px;
+
+    &:nth-of-type(4n+4) {
+      margin-right: 0;
+    }
   }
 
   .form__submit {
     width: 570px;
+    margin-right: 80px;
   }
 
   .form__required {

@@ -3,6 +3,15 @@
   padding-top: 12px;
 }
 
+.nav__wrap {
+  width: $mobile-width;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav__logo {
   padding: 0;
   margin: 0;
@@ -60,6 +69,7 @@
 }
 
 .nav__item {
+  width: 100%;
   margin: 0;
   padding: 0;
   border-top: $border-input;
@@ -106,6 +116,12 @@
   .nav {
     @include flex-between;
     padding-top: 25px;
+  }
+
+  .nav__wrap {
+    width: 154px;
+    padding: 0;
+    margin: 0;
   }
 
   .nav__logo {

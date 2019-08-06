@@ -1,4 +1,8 @@
 .before-after {
+  width: $mobile-width;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
   background-color: $background-color;
   padding-top: 35px;
   padding-bottom: 35px;
@@ -146,8 +150,10 @@
 //_________TABLET___________/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width: $tablet-width) {
   .before-after {
+    width: 100%;
+    padding: 0;
+    margin: 0;
     background-color: transparent;
-    padding-top: 0;
     position: relative;
     padding-bottom: 68px;
 
@@ -167,7 +173,14 @@
     @include wrap;
   }
 
+  .before-after__wrap-desc {
+    width: 708px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .before-after__title {
+    width: 350px;
     margin-bottom: 65px;
 
     @include title ($size:60px, $line:60px);
@@ -280,11 +293,13 @@
 @media (min-width: $desktop-width) {
   .before-after {
     @include flex-between;
+    margin-bottom: 70px;
   }
 
   .before-after__wrap {
     @include flex-between;
   }
+
 
   .before-after__wrap-desc {
     @include flex-between;
