@@ -1,3 +1,15 @@
+.nav--closed {
+  display: none;
+}
+
+.nav--opened {
+  display: block;
+}
+
+.nav--nojs {
+
+}
+
 .nav {
   @include flex-between;
   padding-top: 12px;

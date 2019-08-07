@@ -11,7 +11,7 @@
 <body>
   <header class="header">
     <div class="wrap">
-      <nav class="nav">
+      <nav class="nav .nav--closed .nav--nojs">
         <div class="nav__wrap">
           <a class="nav__logo" href="index.html">
             <img src="img/logo-mobile.svg" alt="Логотип «Cat Energy»" width="191" height="39">
@@ -40,106 +40,115 @@
   </header>
   <main class="form">
     <div class="wrap">
-      <h2 class="form__title">
-        Подбор программы
-      </h2>
-      <p class="form__desc">
-        Заполните анкету и мы подберем
-        программу питания для вашего кота
-      </p>
+      <div class="form__wrap-mobile">
+        <h2 class="form__title">
+          Подбор программы
+        </h2>
+        <p class="form__desc">
+          Заполните анкету и мы подберем
+          программу питания для вашего кота
+        </p>
+      </div>
       <form class="form__form" method="POST" action="https://echo.htmlacademy.ru">
-        <div class="form__wrap--desktop">
+        <div class="form__wrap-desktop">
           <fieldset class="form__fieldset form__fieldset--small">
             <legend class="visually-hidden">Основные данные Вашего кота</legend>
-            <div class="form__wrap">
-              <label class="form__label" for="programm-form-name">
-                Имя:*
-              </label>
-              <input class="form__input" type="text" id="programm-form-name" name="name" placeholder="Барсик" required>
-            </div>
-            <div class="form__wrap">
-              <label class="form__label" for="programm-form-weight">
-                Вес (кг):*
-              </label>
-              <input class="form__input" type="text" id="programm-form-weight" name="weight" placeholder="7" required>
-            </div>
-            <div class="form__wrap">
-              <label class="form__label" for="programm-form-age">
-                Возраст (лет):
-              </label>
-              <input class="form__input" type="text" id="programm-form-age" name="age" placeholder="7">
+            <div class="form__wrap-mobile">
+              <div class="form__wrap">
+                <label class="form__label" for="programm-form-name">
+                  Имя:*
+                </label>
+                <input class="form__input" type="text" id="programm-form-name" name="name" placeholder="Барсик"
+                  required>
+              </div>
+              <div class="form__wrap">
+                <label class="form__label" for="programm-form-weight">
+                  Вес (кг):*
+                </label>
+                <input class="form__input" type="text" id="programm-form-weight" name="weight" placeholder="7" required>
+              </div>
+              <div class="form__wrap">
+                <label class="form__label" for="programm-form-age">
+                  Возраст (лет):
+                </label>
+                <input class="form__input" type="text" id="programm-form-age" name="age" placeholder="7">
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__targets">
             <legend class="visually-hidden">
               Цели Вашего кота
             </legend>
-            <input class="visually-hidden" type="radio" id="targets__slim" name="targets" checked>
-            <label class="form__label-radio" for="targets__slim">
-              Похудение
-            </label>
-            <input class="visually-hidden" type="radio" id="targets__plump" name="targets">
-            <label class="form__label-radio" for="targets__plump">
-              Набор массы
-            </label>
-            <input class="visually-hidden" type="radio" id="targets__advice" name="targets">
-            <label class="form__label-radio" for="targets__advice">
-              Не знаю (Нужен ваш совет)
-            </label>
+            <div class="form__wrap-mobile">
+              <input class="visually-hidden" type="radio" id="targets__slim" name="targets" checked>
+              <label class="form__label-radio" for="targets__slim">
+                Похудение
+              </label>
+              <input class="visually-hidden" type="radio" id="targets__plump" name="targets">
+              <label class="form__label-radio" for="targets__plump">
+                Набор массы
+              </label>
+              <input class="visually-hidden" type="radio" id="targets__advice" name="targets">
+              <label class="form__label-radio" for="targets__advice">
+                Не знаю (Нужен ваш совет)
+              </label>
+            </div>
           </fieldset>
         </div>
-        <fieldset class="form__fieldset">
-          <div class="green-title-wrap">
-            <legend class="form__legend">
-              Контактные данные&nbsp<span>(владельца кота)</span>
-            </legend>
-          </div>
-          <div class="form__wrap--desktop">
-            <div class="form__wrap form__wrap--email">
-              <label class="form__label" for="form-email">
-                E-mail:*
-              </label>
-              <input class="form__input form__input--email" type="email" id="form-email" name="email"
-                placeholder="kuklachev@gmail.com" required>
+        <div class="form__wrap-mobile">
+          <fieldset class="form__fieldset">
+            <div class="green-title-wrap">
+              <legend class="form__legend">
+                Контактные данные&nbsp<span>(владельца кота)</span>
+              </legend>
             </div>
-            <div class="form__wrap form__wrap--tel">
-              <label class="form__label" for="form-tel">
-                Телефон:*
-              </label>
-              <input class="form__input form__input--tel" type="tel" id="form-tel" name="tel"
-                placeholder="8 (960) 900-60-90" required>
+            <div class="form__wrap-desktop">
+              <div class="form__wrap form__wrap--email">
+                <label class="form__label" for="form-email">
+                  E-mail:*
+                </label>
+                <input class="form__input form__input--email" type="email" id="form-email" name="email"
+                  placeholder="kuklachev@gmail.com" required>
+              </div>
+              <div class="form__wrap form__wrap--tel">
+                <label class="form__label" for="form-tel">
+                  Телефон:*
+                </label>
+                <input class="form__input form__input--tel" type="tel" id="form-tel" name="tel"
+                  placeholder="8 (960) 900-60-90" required>
+              </div>
             </div>
-          </div>
-        </fieldset>
-        <fieldset class="form__fieldset">
-          <div class="green-title-wrap">
-            <label class="form__legend" for="form-comment">
-              Комментарий
-            </label>
-          </div>
-          <textarea class="form__input-textarea" id="form-comment" name="comment"
-            placeholder="Расскажите обо всех повадках кота" rows="7"></textarea>
-        </fieldset>
-        <fieldset class="form__fieldset">
-          <div class="green-title-wrap">
-            <legend class="form__legend">
-              Дополнительно
-            </legend>
-          </div>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <div class="green-title-wrap">
+              <label class="form__legend" for="form-comment">
+                Комментарий
+              </label>
+            </div>
+            <textarea class="form__input-textarea" id="form-comment" name="comment"
+              placeholder="Расскажите обо всех повадках кота" rows="7"></textarea>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <div class="green-title-wrap">
+              <legend class="form__legend">
+                Дополнительно
+              </legend>
+            </div>
+            <div class="form__wrap--flex">
+              <input class="visually-hidden" type="checkbox" id="additional-sweetener" name="sweetener" checked>
+              <label class="form__label-checkbox" for="additional-sweetener">Сахарозаменитель</label>
+              <input class="visually-hidden" type="checkbox" id="additional-water" name="water">
+              <label class="form__label-checkbox" for="additional-water">Питьевая вода</label>
+              <input class="visually-hidden" type="checkbox" id="additional-Milk" name="Milk">
+              <label class="form__label-checkbox" for="additional-Milk">Молоко</label>
+              <input class="visually-hidden" type="checkbox" id="additional-vitamins" name="vitamins">
+              <label class="form__label-checkbox" for="additional-vitamins">Витамины</label>
+            </div>
+          </fieldset>
           <div class="form__wrap--flex">
-            <input class="visually-hidden" type="checkbox" id="additional-sweetener" name="sweetener" checked>
-            <label class="form__label-checkbox" for="additional-sweetener">Сахарозаменитель</label>
-            <input class="visually-hidden" type="checkbox" id="additional-water" name="water">
-            <label class="form__label-checkbox" for="additional-water">Питьевая вода</label>
-            <input class="visually-hidden" type="checkbox" id="additional-Milk" name="Milk">
-            <label class="form__label-checkbox" for="additional-Milk">Молоко</label>
-            <input class="visually-hidden" type="checkbox" id="additional-vitamins" name="vitamins">
-            <label class="form__label-checkbox" for="additional-vitamins">Витамины</label>
+            <button class="btn form__submit" type="submit">Отправить заявку</button>
+            <p class="form__required">* — Обязательные поля</p>
           </div>
-        </fieldset>
-        <div class="form__wrap--flex">
-          <button class="btn form__submit" type="submit">Отправить заявку</button>
-          <p class="form__required">* — Обязательные поля</p>
         </div>
       </form>
     </div>
@@ -147,7 +156,7 @@
   <footer class="footer">
     <section class="contacts contacts__gray">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="wrap">
+      <div class="wrap contacts__wrap-desktop">
         <div class="contacts__wrap">
           <p class="contacts__title">
             приглашаем
