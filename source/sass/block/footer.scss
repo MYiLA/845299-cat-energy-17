@@ -17,6 +17,15 @@
   padding-right: 70px;
   padding-bottom: 30px;
   padding-left: 73px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer__copyright {
@@ -24,6 +33,15 @@
   width: 280;
   padding: 0;
   margin: 0;
+
+  // &:hover,
+  // &:focus {
+  //   opacity: 0.8;
+  // }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__academy {
