@@ -10,10 +10,11 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  // align-items: center;
 }
 
-.nav__logo {
+.nav__logo img {
+  width: 191px;
+  height: auto;
   padding: 0;
   margin: 0;
   margin-bottom: 15px;
@@ -153,11 +154,10 @@
     margin: 0;
   }
 
-  .nav__logo {
-    width: 154px;
-    height: 65px;
-    background: rgba(0, 128, 0, 0.2);
-    box-shadow: 0 0 0 3px green;
+  .nav__logo img {
+    width: 173px;
+    height: auto;
+    padding-top: 3px;
   }
 
   .nav__menu-btn {
@@ -193,11 +193,12 @@
     margin-bottom: 100px;
   }
 
-  .nav__logo {
-    width: 205px;
-    height: 60px;
-    background: rgba(0, 128, 0, 0.2);
-    box-shadow: 0 0 0 3px green;
+  // .nav__logo {
+  //   padding-top: 0;
+  // }
+
+  .nav__logo img {
+    width: 202px;
   }
 
   .nav__menu-btn {

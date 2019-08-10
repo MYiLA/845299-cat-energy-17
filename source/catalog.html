@@ -14,7 +14,11 @@
       <nav class="nav nav--closed nav--nojs">
         <div class="nav__wrap">
           <a class="nav__logo" href="index.html">
-            <img src="img/logo-mobile.svg" alt="Логотип «Cat Energy»" width="191" height="39">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Логотип «Cat Energy»" width="191" height="39">
+            </picture>
           </a>
           <button class="nav__menu-btn" type="button" aria-label="показать или закрыть меню"></button>
         </div>
