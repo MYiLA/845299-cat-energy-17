@@ -83,6 +83,15 @@
     display: block;
     margin-bottom: 20px;
   }
+
+  .contacts__map-img {
+    width: 767px;
+    height: auto;
+  }
+
+  .contacts__map-iframe {
+    height: 397px;
+  }
 }
 
 //_________DESKTOP__________////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -121,18 +130,18 @@
     z-index: -1;
   }
 
+  .contacts__map-img {
+    display: block;
+    margin: 0 auto;
+    width: 1440px;
+  }
+
   .contacts__map-iframe {
     height: 400px;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-  }
-
-  .contacts__map-img {
-    position: absolute;
-    margin: 0;
-    padding: 0;
   }
 
   .contacts__gray {
