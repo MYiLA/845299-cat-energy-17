@@ -8,6 +8,11 @@
 }
 
 .contacts__wrap {
+  width: $mobile-width;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+
   @include flex-between;
   padding-top: 35px;
   padding-bottom: 25px;
@@ -55,6 +60,8 @@
 //_________TABLET__________////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width: $tablet-width) {
   .contacts__wrap {
+    width: 100%;
+    margin: 0;
     padding: 0 40px;
     padding-bottom: 60px;
     padding-top: 68px;
@@ -80,11 +87,18 @@
 
 //_________DESKTOP__________////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width: $desktop-width) {
+  .contacts {
+    background-color: transparent;
+  }
+
+  .contacts__wrap-desktop {
+    padding-top: 98px;
+    padding-bottom: 105px;
+  }
+
   .contacts__wrap {
-    position: absolute;
     width: 570px;
     margin: 0;
-    margin-bottom: 105px;
     padding: 50px 76px;
     background-color: $white;
     z-index: 1;
@@ -95,5 +109,33 @@
     width: 170px;
     text-align: left;
     font-size: 16px;
+  }
+
+  .contacts__map {
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .contacts__map-iframe {
+    height: 400px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .contacts__map-img {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__gray {
+    background-color: transparent;
   }
 }

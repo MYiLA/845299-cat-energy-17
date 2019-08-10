@@ -99,6 +99,30 @@
   @include title ($size:16px, $line:16px);
   color: $gray-font-design;
   text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 11px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    left: 120%;
+    top: 50%;
+    transform: translateY(50%);
+  }
+
+  &:hover::after,
+  &:focus::after {
+    width: 33px;
+    height: 11px;
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -163,16 +187,6 @@
     border: none;
     position: relative;
     margin-bottom: 15px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 24px;
-      height: 11px;
-      background-image: url("../../img/icon-right-arrow-long.svg");
-      right: 0;
-      top: 25%;
-    }
   }
 }
 
@@ -180,6 +194,7 @@
   .targets {
     width: 1300px;
     padding: 40px;
+    padding-bottom: 0;
 
     @include flex-between;
     margin-bottom: 50px;

@@ -11,11 +11,13 @@
 <body>
   <header class="header">
     <div class="wrap">
-      <nav class="nav">
-        <a class="nav__logo">
-          <img src="img/logo-mobile.svg" alt="Логотип «Cat Energy»" width="191" height="39">
-        </a>
-        <button class="nav__menu-btn" type="button" aria-label="показать или закрыть меню"></button>
+      <nav class="nav nav--opened nav--nojs">
+        <div class="nav__wrap">
+          <a class="nav__logo">
+            <img src="img/logo-mobile.svg" alt="Логотип «Cat Energy»" width="191" height="39">
+          </a>
+          <button class="nav__menu-btn" type="button" aria-label="показать или закрыть меню"></button>
+        </div>
         <ul class="nav__list nav__list--white">
           <li class="nav__item">
             <a class="nav__link">
@@ -169,7 +171,7 @@
   <footer class="footer">
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="wrap">
+      <div class="wrap contacts__wrap-desktop">
         <div class="contacts__wrap">
           <p class="contacts__title">
             приглашаем
@@ -220,6 +222,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
