@@ -54,10 +54,33 @@
   padding-top: 58px;
   margin-bottom: 10px;
   text-align: center;
+  position: relative;
 
   @include title ($size:16px, $line:20px);
   text-transform: uppercase;
   color: $gray-font-design;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(34, 34, 34, 0.2);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(34, 34, 34, 0.2);
+  }
 }
 
 .catalog__more-desc {
@@ -178,6 +201,15 @@
     margin-bottom: 30px;
 
     @include title ($size:20px, $line:20px);
+
+    &::before {
+      width: 60px;
+      top: 30px;
+    }
+
+    &::after {
+      height: 60px;
+    }
   }
 
   .catalog__more-desc {
