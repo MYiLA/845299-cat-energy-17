@@ -44,32 +44,34 @@
   align-items: center;
   margin-bottom: 15px;
   position: relative;
+}
 
-  &--email {
-    &::before {
-      content: "";
-      display: block;
-      width: 17px;
-      height: 13px;
-      position: absolute;
-      right: 16px;
-      z-index: 1;
-      background-image: url("../../img/icon-mail.svg");
-    }
-  }
+.form__icon-email {
+  display: block;
+  position: absolute;
+  right: 16px;
+  z-index: 1;
+  fill: rgb(34, 34, 34);
+  // .form__input:invalid + .form__icon-email {
+  //   fill: rgb(255, 130, 130);
+  // }
+}
 
-  &--tel {
-    &::before {
-      content: "";
-      display: block;
-      width: 20px;
-      height: 20px;
-      position: absolute;
-      right: 13px;
-      z-index: 1;
-      background-image: url("../../img/icon-phone.svg");
-    }
-  }
+.form__input:active + .form__icon-email,
+.form__input:focus + .form__icon-email {
+  fill: $green;
+}
+
+.form__icon-tel {
+  display: block;
+  position: absolute;
+  right: 13px;
+  z-index: 1;
+}
+
+.form__input:active + .form__icon-tel,
+.form__input:focus + .form__icon-tel {
+  fill: $green;
 }
 
 .form__wrap-mobile {
@@ -103,6 +105,7 @@
   padding-right: 10px;
   flex-grow: 1;
   border: 1px solid rgba(205, 205, 205, 0.5);
+  outline: none;
 
   @include title ($size:16px, $line:18px);
   color: $gray-font-main;
@@ -113,12 +116,7 @@
     text-overflow: ellipsis;
   }
 
-  &--email {
-    padding-right: 40px;
-    position: relative;
-  }
-
-  &--tel {
+  &--icon {
     padding-right: 40px;
     position: relative;
   }
@@ -132,6 +130,11 @@
     border: 1px solid rgba(68, 68, 68, 1);
     box-shadow: 0 0 0 1px rgba(68, 68, 68, 1);
   }
+
+  // &:invalid {
+  //   border: 1px solid rgb(255, 130, 130);
+  //   box-shadow: 0 0 0 1px rgb(255, 130, 130);
+  // }
 }
 
 .form__targets {
@@ -176,7 +179,7 @@
   }
 
   .form__targets input:focus + &::before {
-    filter: drop-shadow(0 0 4px rgb(255, 74, 2));
+    box-shadow: 0 0 0 2px rgba(68, 68, 68, 1);
   }
 
   &:active {
@@ -199,6 +202,7 @@
   padding-left: 13px;
   margin-bottom: 25px;
   border: 1px solid rgba(205, 205, 205, 0.5);
+  outline: none;
 
   @include title ($size:16px, $line:18px);
   color: $gray-font-main;
@@ -254,7 +258,7 @@
   }
 
   .form__fieldset input:focus + &::before {
-    filter: drop-shadow(0 0 4px rgb(255, 74, 2));
+    box-shadow: 0 0 0 2px rgba(68, 68, 68, 1);
   }
 
   &:active {
@@ -318,18 +322,6 @@
   .form__wrap {
     margin-bottom: 22px;
 
-    &--email {
-      &::before {
-        right: 20px;
-      }
-    }
-
-    &--tel {
-      &::before {
-        right: 17px;
-      }
-    }
-
     &--flex {
       width: 670px;
       margin-bottom: 0;
@@ -363,11 +355,7 @@
 
     @include title ($size:20px, $line:20px);
 
-    &--email {
-      padding-right: 55px;
-    }
-
-    &--tel {
+    &--icon {
       padding-right: 55px;
     }
   }
@@ -474,12 +462,8 @@
   .form__wrap {
     width: 570px;
 
-    &--email {
-      margin: 0;
-    }
-
-    &--tel {
-      margin: 0;
+    &--icon {
+      margin-bottom: 0;
     }
 
     &--flex {
