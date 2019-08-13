@@ -24,14 +24,18 @@
   width: 22px;
   height: 22px;
 
-  // &:hover,
-  // &:focus {
-  //   opacity: 0.8;
-  // }
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: $green;
+  }
 
-  &:active {
+  &:active .social__icon {
     opacity: 0.3;
   }
+}
+
+.social__icon {
+  fill: rgb(102, 102, 102);
 }
 
 @media (min-width: $tablet-width) {
