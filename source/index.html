@@ -34,7 +34,8 @@
       <circle class="st0" cx="12.3" cy="3.7" r="0.9" />
     </symbol>
     <symbol id="icon-fb" viewBox="0 0 10 19">
-      <path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18z" />
+      <path
+        d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18z" />
     </symbol>
     <symbol id="icon-academy" viewBox="0 0 50 45">
       <path
@@ -87,6 +88,12 @@
             Занялся собой? Займись котом!
           </strong>
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/index-can-desktop@1x.webp, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/index-can-tablet@1x.webp, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x">
+
             <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
             <img class="promo__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
@@ -192,6 +199,12 @@
           <div class="before-after__slider">
             <figure class="before-after__img before-after__img--before">
               <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
                 <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот толстый"
@@ -200,6 +213,12 @@
             </figure>
             <figure class="before-after__img before-after__img--after">
               <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
                 <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот худой" max-width="100%">
@@ -239,6 +258,12 @@
       </div>
       <div class="contacts__map">
         <picture>
+          <source type="image/webp" media="(min-width: 1300px)"
+            srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp 2x">
+
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
           <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
@@ -255,22 +280,26 @@
       </a>
       <ul class="social">
         <li class="social__item">
-          <a class="social__btn" href="#" aria-label="Cat Energy во Вконтакте">
-            <svg class="social__icon" width="22" height="12">
+          <a class="social__btn" href="#">
+            <svg class="social__icon" width="22" height="12" role="img" aria-labelledby="heading-vk" focusable="falses">
+              <title id="heading-vk">Cat Energy во Вконтакте</title>
               <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__btn" href="#" aria-label="Cat Energy в Инстаграмме">
-            <svg class="social__icon" width="17" height="17">
+          <a class="social__btn" href="#">
+            <svg class="social__icon" width="17" height="17" role="img" aria-labelledby="heading-insta"
+              focusable="falses">
+              <title id="heading-insta">Cat Energy в Инстаграмме</title>
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__btn" href="#" aria-label="Cat Energy в Фейсбуке">
-            <svg class="social__icon" width="10" height="19">
+          <a class="social__btn" href="#">
+            <svg class="social__icon" width="10" height="19" role="img" aria-labelledby="heading-fb" focusable="falses">
+              <title id="heading-fb">Cat Energy в Фейсбуке</title>
               <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
@@ -278,7 +307,9 @@
       </ul>
       <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <p class="footer__academy">HTML Academy</p>
-        <svg class="footer__icon" width="28" height="35">
+        <svg class="footer__icon" width="28" height="35" role="img" aria-labelledby="heading-academy"
+          focusable="falses">
+          <title id="heading-academy">Перейти на страницу курса HTML и CSS уровень 2</title>
           <use xlink:href="#icon-academy"></use>
         </svg>
       </a>
