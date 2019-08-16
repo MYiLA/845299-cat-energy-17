@@ -7,15 +7,15 @@
 
 body {
   min-width: $mobile-width;
-  overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
+  // overflow-x: hidden;
 }
 
 html {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 *,
@@ -31,9 +31,7 @@ input[type="radio"].visually-hidden {
 }
 
 .wrap {
-  @media (min-width: $tablet-width) {
-    @include wrap;
-  }
+  @include wrap;
 }
 
 .green-title-wrap {

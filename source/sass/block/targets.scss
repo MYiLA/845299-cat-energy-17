@@ -187,6 +187,12 @@
     border: none;
     position: relative;
     margin-bottom: 15px;
+
+    &::after {
+      left: 80%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 
@@ -243,24 +249,5 @@
   .targets__desc {
     margin-bottom: 35px;
     width: 467px;
-  }
-
-  .targets__link {
-    @include title ($size:20px, $line:20px);
-    display: block;
-    width: 158px;
-    padding-top: 0;
-    border: none;
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 24px;
-      height: 11px;
-      background-image: url("../../img/icon-right-arrow-long.svg");
-      right: 0;
-      top: 25%;
-    }
   }
 }
