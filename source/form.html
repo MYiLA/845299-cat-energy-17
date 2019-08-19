@@ -9,20 +9,32 @@
 </head>
 
 <body>
-  <div style="display: none;">
-   <include src="build/img/icon-phone.svg">
-    </include>
-    <include src="build/img/icon-mail.svg">
-    </include>
-    <include src="build/img/icon-vk.svg">
-    </include>
-    <include src="build/img/icon-insta.svg">
-    </include>
-    <include src="build/img/icon-fb.svg">
-    </include>
-    <include src="build/img/icon-academy.svg">
-    </include>
-  </div>
+  <svg style="display: none;">
+    <symbol id="icon-phone" viewBox="0 0 20 20">
+      <include src="build/img/icon-phone.svg">
+      </include>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 17 13">
+      <include src="build/img/icon-mail.svg">
+      </include>
+    </symbol>
+    <symbol id="icon-vk" viewBox="0 0 22 12">
+      <include src="build/img/icon-vk.svg">
+      </include>
+    </symbol>
+    <symbol id="icon-insta" viewBox="0 0 17 17">
+      <include src="build/img/icon-insta.svg">
+      </include>
+    </symbol>
+    <symbol id="icon-fb" viewBox="0 0 10 19">
+      <include src="build/img/icon-fb.svg">
+      </include>
+    </symbol>
+    <symbol id="icon-academy" viewBox="0 0 50 45">
+      <include src="build/img/icon-academy.svg">
+      </include>
+    </symbol>
+  </svg>
   <header class="header">
     <div class="wrap">
       <nav class="nav nav--closed nav--nojs">
@@ -127,7 +139,8 @@
                 </label>
                 <input class="form__input form__input--icon" type="email" id="form-email" name="email"
                   placeholder="kuklachev@gmail.com" required>
-                <svg class="form__icon-email" width="17" height="13" role="presentation" aria-hidden="true" focusable="false">
+                <svg class="form__icon-email" width="17" height="13" role="presentation" aria-hidden="true"
+                  focusable="false">
                   <use xlink:href="#icon-mail"></use>
                 </svg>
               </div>
@@ -137,7 +150,8 @@
                 </label>
                 <input class="form__input form__input--icon" type="tel" id="form-tel" name="tel"
                   placeholder="8 (960) 900-60-90" required>
-                <svg class="form__icon-tel" width="20" height="20" role="presentation" aria-hidden="true" focusable="false">
+                <svg class="form__icon-tel" width="20" height="20" role="presentation" aria-hidden="true"
+                  focusable="false">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
               </div>
@@ -198,7 +212,7 @@
       </div>
       <div class="contacts__map">
         <picture>
-            <source type="image/webp" media="(min-width: 1300px)"
+          <source type="image/webp" media="(min-width: 1300px)"
             srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
             srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
