@@ -8,11 +8,7 @@
 }
 
 .contacts__wrap {
-  width: $mobile-width;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin: 0 auto;
-
+  @include wrap-mobile;
   @include flex-between;
   padding-top: 35px;
   padding-bottom: 25px;

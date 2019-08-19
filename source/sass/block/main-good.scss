@@ -1,8 +1,5 @@
 .main-good {
-  width: $mobile-width;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin: 0 auto;
+  @include wrap-mobile;
   padding-bottom: 24px;
   background-color: transparent;
 
