@@ -63,11 +63,10 @@
 
 @media (min-width: $tablet-width) {
   .footer__wrap {
-    width: $tablet-width;
+    @include wrap;
+    @include flex-between;
     padding-top: 64px;
     padding-bottom: 62px;
-
-    @include flex-between;
     align-items: center;
     justify-content: center;
   }
