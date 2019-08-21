@@ -148,19 +148,19 @@
 }
 
 @media (max-width: $tablet-width) {
-  .before-after__toggle-after:checked~.before-after__slider .before-after__img--after {
+  .before-after__toggle-after:checked ~ .before-after__slider .before-after__img--after {
     display: block;
   }
 
-  .before-after__toggle-before:checked~.before-after__slider .before-after__img--before {
+  .before-after__toggle-before:checked ~ .before-after__slider .before-after__img--before {
     display: block;
   }
 
-  .before-after__toggle-before:checked~.before-after__controls .before-after__range-toggle::after {
+  .before-after__toggle-before:checked ~ .before-after__controls .before-after__range-toggle::after {
     left: 5%;
   }
 
-  .before-after__toggle-after:checked~.before-after__controls .before-after__range-toggle::after {
+  .before-after__toggle-after:checked ~ .before-after__controls .before-after__range-toggle::after {
     left: 53%;
   }
 }
