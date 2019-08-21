@@ -181,6 +181,8 @@
           <p class="before-after__price">Затраты на питание: <span>15 000 руб.</span></p>
         </div>
         <div class="before-after__wrap-slider">
+          <input class="visually-hidden before-after__toggle-before" type="radio" id="before" name="toggle-slider" checked>
+          <input class="visually-hidden before-after__toggle-after" type="radio" id="after" name="toggle-slider">
           <div class="before-after__slider">
             <figure class="before-after__img before-after__img--before">
               <picture>
@@ -208,8 +210,6 @@
               </picture>
             </figure>
           </div>
-          <input class="visually-hidden" type="radio" id="before" name="toggle-slider" checked>
-          <input class="visually-hidden" type="radio" id="after" name="toggle-slider">
           <div class="before-after__controls">
             <label class="before-after__controls-item" for="before">Было</label>
             <div class="before-after__range-toggle"></div>
