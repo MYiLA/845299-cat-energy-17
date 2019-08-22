@@ -116,7 +116,8 @@ gulp.task("build", gulp.series(
 
 gulp.task("start", gulp.series(
   "build",
-  "server"));
+  "server",
+));
 
 gulp.task("optimizeimg", gulp.series(
   "images",
