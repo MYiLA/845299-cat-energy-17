@@ -118,7 +118,7 @@
   }
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $tablet-width) {
   .nav--closed .nav__list {
     display: none;
   }
