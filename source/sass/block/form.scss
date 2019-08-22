@@ -52,14 +52,15 @@
   right: 16px;
   z-index: 1;
   fill: rgb(34, 34, 34);
-  // .form__input:invalid + .form__icon-email {
-  //   fill: rgb(255, 130, 130);
-  // }
 }
 
 .form__input:active + .form__icon-email,
 .form__input:focus + .form__icon-email {
   fill: $green;
+}
+
+.form__input:invalid + .form__icon-email {
+  fill: rgb(255, 130, 130);
 }
 
 .form__icon-tel {
@@ -73,6 +74,10 @@
 .form__input:active + .form__icon-tel,
 .form__input:focus + .form__icon-tel {
   fill: $green;
+}
+
+.form__input:invalid + .form__icon-tel {
+  fill: rgb(255, 130, 130);
 }
 
 .form__wrap-mobile {
@@ -128,11 +133,20 @@
     border: 1px solid rgba(68, 68, 68, 1);
     box-shadow: 0 0 0 1px rgba(68, 68, 68, 1);
   }
+}
 
-  // &:invalid {
-  //   border: 1px solid rgb(255, 130, 130);
-  //   box-shadow: 0 0 0 1px rgb(255, 130, 130);
-  // }
+.form__input:invalid {
+  border: 1px solid rgb(255, 130, 130);
+  box-shadow: 0 0 0 1px rgb(255, 130, 130);
+}
+
+.form__input--invalid {
+  border: 1px solid rgb(255, 130, 130);
+  box-shadow: 0 0 0 1px rgb(255, 130, 130);
+
+  & + .form__icon-email {
+    fill: rgb(255, 130, 130);
+  }
 }
 
 .form__targets {
