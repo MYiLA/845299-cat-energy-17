@@ -1,10 +1,12 @@
 .targets {
+  @include wrap-mobile;
   margin-bottom: 15px;
 
   @include wrap;
 }
 
 .targets__wrap {
+  // @include wrap-mobile;
   margin-bottom: 20px;
   background-color: $background-color;
   padding: 22px;
