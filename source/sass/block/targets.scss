@@ -6,19 +6,19 @@
 }
 
 .targets__wrap {
-  // @include wrap-mobile;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   background-color: $background-color;
-  padding: 22px;
+  padding: 20px;
 }
 
 .targets__title {
   display: block;
   padding: 0;
   margin: 0;
-  padding-top: 15px;
-  padding-left: 75px;
-  padding-bottom: 15px;
+  margin-bottom: 21px;
+  padding-top: 9px;
+  padding-left: 71px;
+  padding-bottom: 8px;
 
   @include title ($size:24px, $line:37px);
   color: $gray-font-design;
@@ -33,8 +33,8 @@
     position: absolute;
     width: 50px;
     height: 49px;
-    left: 0;
-    top: 50%;
+    left: 2px;
+    top: 47%;
     transform: translateY(-50%);
     background-image: url("../../img/icon-cat-slim.svg");
     background-position: 50%, 50%;
@@ -46,7 +46,7 @@
     position: absolute;
     width: 50px;
     height: 50px;
-    left: 0;
+    left: 3px;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
@@ -56,14 +56,15 @@
 
 .targets__title--plump {
   position: relative;
+  margin-bottom: 23px;
 
   &::after {
     content: "";
     position: absolute;
     width: 67px;
     height: 28px;
-    left: -10px;
-    top: 50%;
+    left: -7px;
+    top: 56%;
     transform: translateY(-50%);
     background-image: url("../../img/icon-cat-pro.svg");
     background-position: 50%, 50%;
@@ -75,8 +76,8 @@
     position: absolute;
     width: 50px;
     height: 50px;
-    left: 0;
-    top: 50%;
+    left: 2px;
+    top: 57%;
     transform: translateY(-50%);
     border-radius: 50%;
     background-color: $green;
@@ -86,13 +87,14 @@
 .targets__desc {
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 22px;
 
   @include font-main ($size:14px, $line:18px);
   color: $gray-font-main;
 }
 
 .targets__link {
+  display: block;
   margin: 0;
   padding: 0;
   padding-top: 20px;
@@ -110,7 +112,7 @@
     width: 24px;
     height: 11px;
     background-image: url("../../img/icon-right-arrow-long.svg");
-    left: 120%;
+    left: 41%;
     top: 50%;
     transform: translateY(50%);
   }

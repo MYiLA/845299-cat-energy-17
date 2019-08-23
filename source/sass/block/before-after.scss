@@ -1,14 +1,17 @@
 .before-after {
-  @include wrap-mobile;
   background-color: $background-color;
-  padding-top: 35px;
+  padding-top: 17px;
   padding-bottom: 35px;
+}
+
+.before-after__wrap-desc {
+  @include wrap-mobile;
 }
 
 .before-after__title {
   display: block;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 23px;
   padding: 0;
 
   @include title ($size:36px, $line:60px);
@@ -19,7 +22,7 @@
   display: block;
   width: 266px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 39px;
   padding: 0;
 
   @include font-main;
@@ -44,15 +47,15 @@
     height: 56px;
     border: 1px solid $gray-205;
     border-radius: 3px;
-    top: -12px;
+    top: -14px;
     left: 0;
   }
 }
 
-.before-after__descr {
+.before-after__table-desc {
   display: block;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   padding: 0;
   text-align: center;
 
@@ -61,7 +64,7 @@
   color: $gray-font-design;
 }
 
-.before-after__sub-descr {
+.before-after__sub-desc {
   display: block;
   position: relative;
   z-index: 1;
@@ -78,7 +81,7 @@
   display: block;
   text-align: center;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 33px;
   padding: 0;
 
   @include title ($size:14px, $line:20px);
@@ -87,7 +90,7 @@
 }
 
 .before-after__slider {
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 }
 
 .before-after__img {
@@ -97,6 +100,8 @@
 }
 
 .before-after__img--before img {
+  display: block;
+  margin: 0 auto;
   width: auto;
   max-width: 100%;
 }
@@ -107,9 +112,10 @@
 }
 
 .before-after__controls {
+  width: 200px;
   position: relative;
-  padding: 0 40px;
-  margin: 0;
+  padding: 0;
+  margin: 0 auto;
 
   @include flex-between;
   align-items: flex-start;
@@ -226,13 +232,13 @@
     }
   }
 
-  .before-after__descr {
+  .before-after__table-desc {
     margin-bottom: 10px;
 
     @include title ($size:30px, $line:37px);
   }
 
-  .before-after__sub-descr {
+  .before-after__sub-desc {
     display: inline-block;
     vertical-align: top;
     width: auto;
@@ -421,7 +427,7 @@
     margin-bottom: 90px;
   }
 
-  .before-after__sub-descr {
+  .before-after__sub-desc {
     background-color: $background-color;
   }
 
