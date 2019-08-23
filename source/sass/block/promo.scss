@@ -62,7 +62,7 @@
 @media (min-width: $tablet-width) {
   .promo {
     position: relative;
-    margin-bottom: 0;
+    margin-bottom: 4px;
 
     &::before {
       background-image: none;
@@ -80,7 +80,8 @@
   .promo__title {
     @include title ($size:60px, $line:60px);
     width: 425px;
-    margin-bottom: 45px;
+    padding-top: 42px;
+    margin-bottom: 42px;
     text-align: left;
     color: $black;
   }
@@ -89,27 +90,28 @@
     @include title ($size:20px, $line:20px);
     text-align: left;
     color: $black;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
   }
 
   .promo__img {
     position: absolute;
-    width: 650px;
+    width: 709px;
     height: auto;
     z-index: -1;
-    bottom: 0;
-    left: 10%;
+    bottom: -3px;
+    left: 29px;
   }
 
   .promo__btn {
+    @include title ($size:20px, $line:20px);
     display: inline-block;
     text-align: center;
     vertical-align: baseline;
     margin-bottom: 525px;
-     padding-top: 17px;
-    padding-right: 27px;
-    padding-bottom: 18px;
-    padding-left: 29px;
+     padding-top: 16px;
+    padding-right: 28px;
+    padding-bottom: 16px;
+    padding-left: 24px;
   }
 }
 
