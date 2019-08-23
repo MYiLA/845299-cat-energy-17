@@ -1,6 +1,6 @@
 .contacts {
   position: relative;
-  background-color: $white;
+  
 }
 
 .contacts__gray {
@@ -12,6 +12,7 @@
   @include flex-between;
   padding-top: 28px;
   padding-bottom: 28px;
+  background-color: $white;
 }
 
 .contacts__title {
@@ -37,24 +38,27 @@
 }
 
 .contacts__map {
-  height: 400px;
+  height: 360px;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .contacts__map-img {
   max-width: 100%;
-  margin: 0;
-  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 
 .contacts__map-iframe {
   width: 100%;
   border: 0;
   position: absolute;
-  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .contacts__map-iframe--nojs {

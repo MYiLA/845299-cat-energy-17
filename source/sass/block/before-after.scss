@@ -107,6 +107,8 @@
 }
 
 .before-after__img--after img {
+  display: block;
+  margin: 0 auto;
   width: auto;
   max-width: 100%;
 }
