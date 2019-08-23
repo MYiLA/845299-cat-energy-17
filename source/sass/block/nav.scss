@@ -118,12 +118,12 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: 767px) {
   .nav--closed .nav__list {
     display: none;
   }
 
-  .nav--closed .nav__wrap {
+  .nav--closed {
     border-bottom: $border-lite;
   }
 
@@ -137,6 +137,7 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .nav {
     @include flex-between;
     padding-top: 25px;
@@ -186,10 +187,6 @@
     padding-top: 55px;
     margin-bottom: 100px;
   }
-
-  // .nav__logo {
-  //   padding-top: 0;
-  // }
 
   .nav__logo img {
     width: 202px;

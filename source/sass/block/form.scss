@@ -80,6 +80,11 @@
   fill: rgb(255, 130, 130);
 }
 
+.form__input:invalid {
+  border: 1px solid rgb(255, 130, 130);
+  box-shadow: 0 0 0 1px rgb(255, 130, 130);
+}
+
 .form__wrap-mobile {
   @include wrap-mobile;
 }
@@ -135,16 +140,15 @@
   }
 }
 
-.form__input:invalid {
-  border: 1px solid rgb(255, 130, 130);
-  box-shadow: 0 0 0 1px rgb(255, 130, 130);
-}
-
 .form__input--invalid {
   border: 1px solid rgb(255, 130, 130);
   box-shadow: 0 0 0 1px rgb(255, 130, 130);
 
   & + .form__icon-email {
+    fill: rgb(255, 130, 130);
+  }
+
+  & + .form__icon-tel {
     fill: rgb(255, 130, 130);
   }
 }
