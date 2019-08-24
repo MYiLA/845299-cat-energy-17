@@ -93,18 +93,19 @@
 @media (min-width: $tablet-width) {
   .advantages {
     @include wrap;
-    margin-bottom: 45px;
+    margin-bottom: 43px;
     border-bottom: $border-input;
   }
 
   .advantages__title {
-    margin-bottom: 74px;
+    margin-bottom: 71px;
 
     @include title ($size:60px, $line:60px);
   }
 
   .advantages__list {
     @include flex-between ($justify: flex-start);
+    margin-bottom: -31px;
   }
 
   .advantages__item {
@@ -113,10 +114,10 @@
     margin: 0;
     position: relative;
     width: 250px;
-    padding-top: 120px;
+    padding-top: 112px;
     padding-bottom: 50px;
-    margin-bottom: 85px;
-    margin-right: 175px;
+    margin-bottom: 83px;
+    margin-right: 134px;
 
     &:nth-child(2n+2) {
       margin-right: 0;
@@ -139,7 +140,7 @@
       @include title ($size:281px, $line:281px);
       color: $background-color;
       top: -39px;
-      right: 0;
+      right: 21px;
       z-index: -1;
     }
   }
@@ -147,18 +148,22 @@
   .advantages__item--glass {
     &::after {
       content: "2";
+      right: 5px;
     }
   }
 
   .advantages__item--flatware {
     &::after {
       content: "3";
+      right: 3px;
+      
     }
   }
 
   .advantages__item--clock {
     &::after {
       content: "4";
+      right: 1px;
     }
   }
 }
@@ -166,11 +171,13 @@
 @media (min-width: $desktop-width) {
   .advantages {
     border: none;
+    margin-bottom: 17px;
   }
 
   .advantages__item {
+    width: 248px;
     margin-bottom: 10px;
-    margin-right: 73px;
+    margin-right: 77px;
 
     &:nth-child(2n+2) {
       margin-right: 73px;
@@ -182,6 +189,24 @@
 
     &::after {
       right: 20px;
+    }
+  }
+
+  .advantages__item--glass {
+    &::after {
+      right: 3px;
+    }
+  }
+
+  .advantages__item--flatware {
+    &::after {
+      right: -2px;
+    }
+  }
+
+  .advantages__item--clock {
+    &::after {
+      right: -5px;
     }
   }
 }

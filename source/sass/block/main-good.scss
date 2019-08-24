@@ -4,12 +4,13 @@
   background-color: transparent;
 
   @include flex-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .main-good__img-link {
   padding: 0;
   margin: 0;
+  margin-bottom: -4px;
 }
 
 .main-good__wrap {
@@ -25,8 +26,9 @@
 .main-good__title {
   width: 87px;
   padding: 0;
+  padding-top: 21px;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 11px;
   text-align: left;
 
   @include title ($size:16px, $line:20px);
@@ -41,6 +43,7 @@
 }
 
 .main-good__table-row {
+  @include flex-between;
   @include font-main ($size:12px, $line:16px);
   color: $gray-font-main;
 }

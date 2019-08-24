@@ -155,7 +155,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: 767px) {
   .before-after__toggle-after:checked ~ .before-after__slider .before-after__img--after {
     display: block;
   }
@@ -178,7 +178,7 @@
   .before-after {
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     background-color: transparent;
     position: relative;
     padding-bottom: 68px;
@@ -200,6 +200,7 @@
   }
 
   .before-after__wrap-desc {
+    padding: 0;
     width: 708px;
     display: flex;
     flex-wrap: wrap;
@@ -214,14 +215,15 @@
 
   .before-after__desc {
     width: 680px;
-    margin-bottom: 70px;
+    margin-bottom: 64px;
 
     @include font-main ($size:16px, $line:24px);
   }
 
   .before-after__container {
-    width: 368px;
-    margin-bottom: 70px;
+    width: 366px;
+    padding-top: 4px;
+    margin-bottom: 68px;
   }
 
   .before-after__table {
@@ -252,12 +254,17 @@
 
   .before-after__price {
     margin: 0;
-    margin-left: 145px;
+    margin-left: 150px;
     padding: 0;
     width: 190px;
     text-align: right;
 
     @include title ($size:20px, $line:20px);
+  }
+
+  .before-after__price span {
+    display: block;
+    padding-top: 8px;
   }
 
   .before-after__wrap-slider {
@@ -269,25 +276,26 @@
     min-height: 520px;
     margin: 0;
     position: relative;
-    margin-bottom: 25px;
-    margin-left: 10px;
+    margin-bottom: 12px;
+    margin-left: 15px;
   }
 
   .before-after__img {
     display: block;
     position: absolute;
     height: 100%;
-    top: 0;
+    top: -3px;
     overflow: hidden;
     width: 50%;
   }
 
   .before-after__img--before {
     left: 0;
+    width: 48%;
   }
 
   .before-after__img--after {
-    right: 0;
+    right: 15px;
   }
 
   .before-after__img--before img {
@@ -306,7 +314,7 @@
 
   .before-after__controls {
     width: auto;
-    padding: 0 70px;
+    padding: 0 69px;
   }
 
   .before-after__controls-item {
@@ -370,6 +378,7 @@
 @media (min-width: $desktop-width) {
   .before-after {
     @include flex-between;
+    width: 1300px;
     margin-bottom: 70px;
     padding-bottom: 0;
 
@@ -377,8 +386,8 @@
       content: "";
       position: absolute;
       width: 100%;
-      height: 461px;
-      bottom: -68px;
+      height: 465px;
+      bottom: -71px;
       z-index: -1;
       background-color: $background-color;
     }
@@ -388,20 +397,50 @@
     @include flex-between;
   }
 
+  .before-after__title {
+    padding-top: 80px;
+    margin-bottom: 140px;
+  }
+
   .before-after__wrap-desc {
     @include flex-between;
     width: 570px;
     margin-right: 40px;
   }
 
+  .before-after__desc {
+    width: 433px;
+    margin-bottom: 76px;
+  }
+
+  .before-after__sub-desc {
+    background-color: $background-color;
+  }
+
+  .before-after__container {
+    margin-bottom: 37px;
+  }
+
+  .before-after__price {
+    margin-left: 0;
+    width: 327px;
+
+    @include flex-between;
+  }
+
+  .before-after__price span {
+    padding-top: 0;
+  }
+
   .before-after__wrap-slider {
     @include flex-between;
     align-content: center;
-    width: 610px;
+    width: 583px;
+    padding-top: 25px;
   }
 
   .before-after__slider {
-    margin-bottom: 25px;
+    margin-bottom: 38px;
     margin-left: 0;
   }
 
@@ -410,44 +449,27 @@
   }
 
   .before-after__img--before {
-    left: -50px;
-    width: 61%;
+    left: -67px;
+    width: 63%;
   }
 
   .before-after__img--after {
     right: -41px;
-    width: 54%;
-  }
-
-  .before-after__title {
-    padding-top: 80px;
-    margin-bottom: 100px;
-  }
-
-  .before-after__desc {
-    width: 440px;
-    margin-bottom: 90px;
-  }
-
-  .before-after__sub-desc {
-    background-color: $background-color;
-  }
-
-  .before-after__container {
-    margin-bottom: 55px;
-  }
-
-  .before-after__price {
-    margin-left: 0;
-    width: 325px;
-
-    @include flex-between;
+    width: 56%;
   }
 
   .before-after__controls {
     width: 610px;
     margin: 0;
     padding: 0;
-    padding-left: 40px;
+    padding-left: 12px;
+  }
+
+  .before-after__controls-item {
+    padding-bottom: 5px;
+  }
+
+  .before-after__range-toggle {
+    margin: -4px 21px;
   }
 }

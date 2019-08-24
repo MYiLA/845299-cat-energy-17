@@ -65,7 +65,7 @@
   .footer__wrap {
     @include wrap;
     @include flex-between;
-    padding-top: 64px;
+    padding-top: 55px;
     padding-bottom: 62px;
     align-items: center;
     justify-content: center;
@@ -78,7 +78,8 @@
 
   .footer__academy {
     text-align: left;
-    margin-right: 20px;
+    margin-right: 10px;
+    padding-bottom: 6px;
   }
 
   .footer__copyright {
@@ -106,5 +107,7 @@
 
   .footer__wrap {
     width: $desktop-width;
+    padding-top: 53px;
+    justify-content: flex-start;
   }
 }

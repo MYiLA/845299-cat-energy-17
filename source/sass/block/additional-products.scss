@@ -1,20 +1,20 @@
 .additional-products {
   @include wrap-mobile;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 }
 
 .additional-products__title {
   @include green-title;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .additional-products__list {
   @include list-reset;
+  margin-bottom: 39px;
 }
 
 .additional-products__item {
-  margin-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 12px;
   border-bottom: 1px solid $gray-205;
 
   &:nth-child(1) {
@@ -32,7 +32,7 @@
   margin: 0;
   padding: 0;
   text-align: left;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
   font-family: $font-design;
   font-size: 16px;
   font-weight: 400;

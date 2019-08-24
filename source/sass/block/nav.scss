@@ -72,10 +72,13 @@
   }
 }
 
+.nav--opened {
+  border-bottom: $border-input;
+}
+
 .nav__list {
   @include list-reset;
   width: 100%;
-  border-bottom: $border-input;
 }
 
 .nav__item {
@@ -186,8 +189,8 @@
 
 @media (min-width: $desktop-width) {
   .nav {
-    padding-top: 55px;
-    margin-bottom: 100px;
+    padding-top: 45px;
+    margin-bottom: 93px;
   }
 
   .nav__logo img {
@@ -199,13 +202,14 @@
   }
 
   .nav__list {
-    padding-top: 16px;
-    width: 594px;
+    padding-top: 28px;
+    width: 580px;
   }
 
   .nav__list--white {
     .nav__link {
       color: $white;
+      padding-bottom: 10px;
 
       &:not([href])::after {
         background-color: $white;

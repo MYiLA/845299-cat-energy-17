@@ -44,18 +44,25 @@
 @media (min-width: $tablet-width) {
   .social {
     padding: 0;
-    width: 324px;
+    width: 150px;
     border: none;
-    margin-right: 30px;
+    margin-right: auto;
+    margin-left: 147px;
   }
 
   .social__item {
-    margin-right: 25px;
+    margin-right: 22px;
+    margin-bottom: 9px;
   }
 
   .social__btn {
     width: 30px;
     height: 30px;
+  }
+
+  .social__icon {
+    width: 30px;
+    height: 27px;
   }
 }
 
@@ -63,6 +70,7 @@
   .social {
     width: 570px;
     border: none;
-    margin-right: 160px;
+    margin-right: 162px;
+    margin-left: 195px;
   }
 }
