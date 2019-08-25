@@ -71,23 +71,22 @@
     width: 324px;
     height: 100%;
     margin: 0;
-    padding-top: 164px;
-    padding-bottom: 40px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-top: 129px;
+    padding-bottom: 38px;
+    padding-left: 38px;
+    padding-right: 38px;
     justify-content: center;
     position: relative;
     background-color: $background-color;
   }
 
   .main-good__img-link {
-    margin-bottom: 45px;
     position: absolute;
-    bottom: 60%;
+    bottom: 71%;
   }
 
   .main-good__img-link img {
-    width: 350px;
+    width: 320px;
     height: auto;
   }
 
@@ -99,8 +98,9 @@
   }
 
   .main-good__title {
-    width: 130px;
-    margin-bottom: 16px;
+    width: 141px;
+    margin-bottom: 18px;
+    padding-top: 32px;
     text-align: center;
 
     @include title ($size:20px, $line:20px);
@@ -108,18 +108,24 @@
 
   .main-good__table {
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     border-collapse: collapse;
   }
 
   .main-good__table-row {
     @include font-main ($size:16px, $line:16px);
     border-bottom: 1px solid $gray-205;
+    
   }
 
   .main-good__table-name {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 9px;
+  }
+
+  .main-good__table-quantity {
+    padding-top: 7px;
+    padding-bottom: 9px;
   }
 }
 

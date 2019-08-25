@@ -139,8 +139,9 @@
   .catalog__title {
     width: 100%;
     padding: 0;
+    padding-top: 42px;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 
     @include title ($size:60px, $line:60px);
   }
@@ -151,7 +152,7 @@
   }
 
   .catalog__main-list {
-    margin-bottom: 71px;
+    margin-bottom: 66px;
     width: 708px;
 
     @include flex-between;
@@ -160,7 +161,7 @@
 
   .catalog__main-item {
     border-top: none;
-    padding-top: 144px;
+    padding-top: 142px;
     display: flex;
     flex-direction: column;
 
@@ -210,7 +211,7 @@
   .catalog__more-desc {
     width: 170px;
     margin: 0 auto;
-    margin-bottom: 98px;
+    margin-bottom: 85px;
 
     @include font-main ($size:16px, $line:16px);
     color: $gray-font-main;
@@ -218,8 +219,9 @@
 
   .catalog__event {
     min-height: 200px;
-    padding-left: 60px;
+    padding-left: 63px;
     padding-right: 120px;
+    padding-top: 71px;
     background-image: url("../../img/gift-photo-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi),
@@ -236,6 +238,11 @@
     padding-left: 360px;
     transform: translateX(0);
     text-align: left;
+
+    &::before {
+      top: -7px;
+      left: 0;
+    }
   }
 }
 
