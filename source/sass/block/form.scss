@@ -133,7 +133,6 @@
   }
 
   &--icon {
-    padding-right: 40px;
     position: relative;
     padding-left: 13px;
     padding-right: 13px;
@@ -373,7 +372,7 @@
     margin: 0;
   }
 
- .form__wrap--icon:nth-last-of-type(1) {
+  .form__wrap--icon:nth-last-of-type(1) {
     margin-bottom: 14px;
   }
 

@@ -115,7 +115,6 @@
   .main-good__table-row {
     @include font-main ($size:16px, $line:16px);
     border-bottom: 1px solid $gray-205;
-    
   }
 
   .main-good__table-name {

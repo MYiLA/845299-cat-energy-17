@@ -131,8 +131,9 @@
 
 @media (min-width: $tablet-width) {
   .targets {
-   margin-bottom: 46px;
+    margin-bottom: 46px;
   }
+
   .targets__wrap {
     background-color: $background-color;
     padding-top: 76px;
@@ -165,7 +166,7 @@
       width: 139px;
       height: 200px;
       left: 67%;
-      top:47%;
+      top: 47%;
     }
   }
 
