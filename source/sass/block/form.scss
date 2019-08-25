@@ -482,11 +482,11 @@
 //_________DESKTOP___________/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width: $desktop-width) {
   .form {
-    margin-bottom: 90px;
+    margin-bottom: 5px;
   }
 
   .form__title {
-    padding-top: 0;
+    padding-top: 46px;
   }
 
   .form__desc {
@@ -496,6 +496,7 @@
 
   .form__form {
     padding-left: 0;
+    margin-bottom: 80px;
   }
 
   .form__fieldset {
@@ -526,12 +527,22 @@
 
   .form__wrap-desktop {
     width: 1220px;
-    margin-bottom: 75px;
+    margin-bottom: 68px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
+  }
+
+  .form__icon-email {
+    right: 20px;
+    top: 22px;
+  }
+
+  .form__icon-tel {
+    right: 19px;
+    top: 19px;
   }
 
   .form__targets {
@@ -541,11 +552,12 @@
 
   .form__input-textarea {
     width: 1220px;
+    margin-bottom: 66px;
   }
 
   .form__label-checkbox {
     width: 245px;
-    margin-bottom: 66px;
+    margin-bottom: 59px;
     margin-right: 80px;
 
     &:nth-of-type(4n+4) {
