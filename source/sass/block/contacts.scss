@@ -81,6 +81,10 @@ display: none;
     background-color: $white;
   }
 
+  .contacts__wrap-gray {
+    background-color: $background-color;
+  }
+
   .contacts__title {
     width: 155px;
 
@@ -113,6 +117,10 @@ display: none;
   .contacts__wrap-desktop {
     padding-top: 92px;
     padding-bottom: 105px;
+    background-color: transparent;
+  }
+
+  .contacts__wrap-gray {
     background-color: transparent;
   }
 

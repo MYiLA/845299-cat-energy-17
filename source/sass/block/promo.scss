@@ -124,7 +124,7 @@
       z-index: -2;
       width: 50%;
       height: 696px;
-      right: -7px;
+      right: -6px;
       background-image: url("../../img/index-background-desktop@1x.jpg");
       background-color: rgb(101, 169, 60);
       background-position-x: 0;
@@ -143,6 +143,7 @@
 
   .promo__title {
     padding: 0;
+    padding-top: 80px;
   }
 
   .promo__slogan {
@@ -153,7 +154,7 @@
     width: 552px;
     height: 499px;
     position: absolute;
-    bottom: -41%;
+    bottom: -32%;
     left: 37%;
   }
 

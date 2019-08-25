@@ -7,8 +7,8 @@
   display: block;
   margin: 0;
   padding: 0;
-  padding-top: 25px;
-  margin-bottom: 30px;
+  padding-top: 15px;
+  margin-bottom: 25px;
   text-align: left;
 
   @include title ($size:36px, $line:60px);
@@ -20,7 +20,7 @@
   display: block;
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 39px;
   text-align: left;
 
   @include title ($size:14px, $line:18px);
@@ -44,6 +44,11 @@
   align-items: center;
   margin-bottom: 15px;
   position: relative;
+
+  &--flex {
+    padding-top: 6px;
+    margin-bottom: 32px;
+  }
 }
 
 .form__icon-email {
@@ -87,15 +92,18 @@
 
 .form__wrap-mobile {
   @include wrap-mobile;
+  margin-bottom: 21px;
+}
+
+.form__wrap-desktop {
+  margin-bottom: 27px;
 }
 
 .form__label {
   width: auto;
   margin: 0;
   padding: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-right: 15px;
+  margin-right: 13px;
   text-align: left;
 
   @include title ($size:16px, $line:18px);
@@ -107,10 +115,10 @@
   width: auto;
   padding: 0;
   margin: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 11px;
+  padding-bottom: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
   flex-grow: 1;
   border: 1px solid rgba(205, 205, 205, 0.5);
   outline: none;
@@ -127,6 +135,8 @@
   &--icon {
     padding-right: 40px;
     position: relative;
+    padding-left: 13px;
+    padding-right: 13px;
   }
 
   &:hover {
@@ -156,7 +166,8 @@
 .form__targets {
   display: block;
   padding-top: 26px;
-  margin-bottom: 32px;
+  padding-bottom: 0;
+  margin-bottom: 29px;
   border: none;
   border-top: $border-input;
   border-bottom: $border-input;
@@ -164,8 +175,8 @@
 
 .form__label-radio {
   display: block;
-  padding-left: 45px;
-  margin-bottom: 26px;
+  padding-left: 33px;
+  margin-bottom: 25px;
   position: relative;
 
   @include title ($size:16px, $line:18px);
@@ -205,17 +216,18 @@
 
 .form__legend {
   @include green-title;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
+  padding-right: 18px;
 }
 
 .form__input-textarea {
   width: 100%;
   padding: 0;
   margin: 0;
-  padding-top: 15px;
-  padding-right: 13px;
-  padding-bottom: 15px;
-  padding-left: 13px;
+  padding-top: 14px;
+  padding-right: 12px;
+  padding-bottom: 45px;
+  padding-left: 14px;
   margin-bottom: 25px;
   border: 1px solid rgba(205, 205, 205, 0.5);
   outline: none;
@@ -242,8 +254,8 @@
 
 .form__label-checkbox {
   display: block;
-  padding-left: 45px;
-  margin-bottom: 29px;
+  padding-left: 46px;
+  margin-bottom: 24px;
 
   @include title ($size:16px, $line:18px);
   color: rgb(34, 34, 34);
@@ -311,7 +323,7 @@
 @media (min-width: $tablet-width) {
   .form__title {
     width: 450px;
-    padding-top: 55px;
+    padding-top: 42px;
     margin-bottom: 55px;
 
     @include title ($size:60px, $line:60px);
@@ -320,7 +332,7 @@
   .form__desc {
     width: 330px;
     margin-left: 40px;
-    margin-bottom: 70px;
+    margin-bottom: 66px;
 
     @include title ($size:20px, $line:30px);
   }
@@ -332,13 +344,15 @@
   }
 
   .form__fieldset {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 
   .form__wrap {
-    margin-bottom: 22px;
+    margin-bottom: 19px;
 
     &--flex {
+      padding: 0;
+      padding-top: 11px;
       width: 670px;
       margin-bottom: 0;
       display: flex;
@@ -355,6 +369,14 @@
     margin: 0;
   }
 
+  .form__wrap-desktop {
+    margin: 0;
+  }
+
+ .form__wrap--icon:nth-last-of-type(1) {
+    margin-bottom: 14px;
+  }
+
   .form__label {
     padding-top: 16px;
     padding-bottom: 17px;
@@ -364,10 +386,10 @@
   }
 
   .form__input {
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-left: 21px;
-    padding-right: 21px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
 
     @include title ($size:20px, $line:20px);
 
@@ -377,15 +399,16 @@
   }
 
   .form__targets {
-    padding-top: 30px;
+    margin: 0;
+    padding-top: 34px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 81px;
+    margin-bottom: 77px;
     border: $border-input;
   }
 
   .form__label-radio {
-    padding-left: 64px;
+    padding-left: 57px;
     margin-bottom: 33px;
 
     @include title ($size:20px, $line:20px);
@@ -400,23 +423,31 @@
 
   .form__legend {
     @include green-title;
-    margin-bottom: 70px;
+    margin-bottom: 74px;
     margin-left: -40px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &--checkbox {
+      margin-bottom: 0;
+    }
   }
 
   .form__input-textarea {
-    padding-top: 17px;
-    padding-right: 20px;
-    padding-bottom: 17px;
-    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 19px;
+    padding-bottom: 13px;
+    padding-left: 19px;
+    margin-bottom: 10px;
 
     @include title ($size:20px, $line:30px);
   }
 
   .form__label-checkbox {
-    width: 324px;
+    width: 325px;
     padding-left: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
+    margin-top: 53px;
 
     @include title ($size:20px, $line:20px);
 
@@ -429,6 +460,7 @@
   .form__submit {
     display: inline-block;
     width: 285px;
+    margin-bottom: -3px;
 
     @include title ($size:20px, $line:20px);
     padding-top: 17px;

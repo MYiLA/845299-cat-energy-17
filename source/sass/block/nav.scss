@@ -190,7 +190,7 @@
 @media (min-width: $desktop-width) {
   .nav {
     padding-top: 45px;
-    margin-bottom: 93px;
+    margin-bottom: 13px;
   }
 
   .nav__logo img {
@@ -209,7 +209,6 @@
   .nav__list--white {
     .nav__link {
       color: $white;
-      padding-bottom: 10px;
 
       &:not([href])::after {
         background-color: $white;
@@ -223,7 +222,7 @@
 
   .nav__link {
     margin-bottom: 20px;
-    padding-bottom: 14px;
+    padding-bottom: 10px;
     font-size: 20px;
   }
 }

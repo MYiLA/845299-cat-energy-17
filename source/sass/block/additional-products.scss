@@ -136,7 +136,7 @@
 //
 @media (min-width: $desktop-width) {
   .additional-products {
-    margin-bottom: 90px;
+    margin-bottom: 84px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -152,25 +152,35 @@
     width: 895px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
 
   .additional-products__name {
-    width: 245px;
+    width: 300px;
     margin: 0;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    margin-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 26px;
   }
 
   .additional-products__wrap {
-    width: 285px;
-    padding-bottom: 0;
+    width: 288px;
+    padding: 0;
+    margin-right: 37px;
+  }
+
+  .additional-products__volume {
+    width: 152px;
+    padding: 0;
+    padding-top: 4px;
+    text-align: left;
   }
 
   .additional-products__price {
-    width: 50px;
-    padding: 0;
+    width: 45px;
+    padding-top: 5px;
+    text-align: left;
   }
 
   .additional-products__btn {

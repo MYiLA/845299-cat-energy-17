@@ -133,6 +133,11 @@
 @media (min-width: $desktop-width) {
   .main-good {
     width: 245px;
+    padding-top: 131px;
+  }
+
+  .main-good__img-link {
+    bottom: 70%;
   }
 
   .main-good__img-link img {
