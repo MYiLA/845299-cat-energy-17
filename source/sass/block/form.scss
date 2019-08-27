@@ -56,6 +56,8 @@
   display: block;
   position: absolute;
   right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1;
   fill: rgb(34, 34, 34);
 }
@@ -73,6 +75,8 @@
   display: block;
   position: absolute;
   right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1;
   fill: rgb(34, 34, 34);
 }
@@ -101,7 +105,7 @@
 }
 
 .form__label {
-  width: auto;
+  max-width: 95px;
   margin: 0;
   padding: 0;
   margin-right: 13px;
@@ -115,12 +119,13 @@
 
 .form__input {
   // width: auto;
+  // min-width: 150px;
   padding: 0;
   margin: 0;
   padding-top: 11px;
   padding-bottom: 14px;
-  padding-left: 15px;
-  padding-right: 15px;
+  // padding-left: 15px;
+  // padding-right: 15px;
   flex-grow: 1;
   border: 1px solid rgba(205, 205, 205, 0.5);
   outline: none;
@@ -539,12 +544,14 @@
 
   .form__icon-email {
     right: 20px;
-    top: 22px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .form__icon-tel {
     right: 19px;
-    top: 19px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .form__targets {
