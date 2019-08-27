@@ -85,11 +85,11 @@
     bottom: 71%;
     left: 50%;
     transform: translateX(-50%);
-  }
 
-  .main-good__img-link img {
-    width: 320px;
-    height: auto;
+    img {
+      width: 320px;
+      height: auto;
+    }
   }
 
   .main-good__wrap {
@@ -139,10 +139,10 @@
 
   .main-good__img-link {
     bottom: 70%;
-  }
 
-  .main-good__img-link img {
-    width: 250px;
-    height: auto;
+    img {
+      width: 250px;
+      height: auto;
+    }
   }
 }

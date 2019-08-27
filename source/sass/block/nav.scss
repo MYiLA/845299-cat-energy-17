@@ -10,19 +10,21 @@
   justify-content: space-between;
 }
 
-.nav__logo img {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 15px;
-  display: block;
+.nav__logo {
+  img {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    display: block;
 
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-  }
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
 
-  &:active {
-    opacity: 0.6;
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
 
@@ -36,42 +38,38 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
-}
 
-.nav--closed .nav__menu-btn::before {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 2px;
-  top: 0;
-  right: 0;
-  background-color: $black;
-  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
-}
-
-.nav--opened .nav__menu-btn {
-  &::after,
-  &::before {
+  .nav--closed &::before {
     content: "";
     position: absolute;
-    top: 45%;
-    left: 0;
     width: 24px;
     height: 2px;
+    top: 0;
+    right: 0;
     background-color: $black;
+    box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
   }
 
-  &::before {
-    transform: rotate(45deg);
-  }
+  .nav--opened & {
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 45%;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $black;
+    }
 
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
+    &::before {
+      transform: rotate(45deg);
+    }
 
-.nav--opened {
-  border-bottom: $border-input;
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
 }
 
 .nav__list {
@@ -121,20 +119,30 @@
 }
 
 @media (max-width: 767px) {
-  .nav--closed .nav__list {
-    display: none;
+  .nav__list {
+    .nav--closed & {
+      display: none;
+    }
+
+    .nav--nojs & {
+      display: inline-block;
+    }
   }
 
-  .nav--closed {
-    border-bottom: $border-lite;
-  }
+  .nav {
+    &--opened {
+      border-bottom: $border-input;
+    }
 
-  .nav--nojs .nav__menu-btn {
-    display: none;
-  }
+    &--closed {
+      border-bottom: $border-lite;
+    }
 
-  .nav--nojs .nav__list {
-    display: inline-block;
+    &--nojs {
+      .nav__menu-btn {
+        display: none;
+      }
+    }
   }
 }
 
@@ -151,9 +159,11 @@
     margin: 0;
   }
 
-  .nav__logo img {
-    width: 174px;
-    height: 60px;
+  .nav__logo {
+    img {
+      width: 174px;
+      height: 60px;
+    }
   }
 
   .nav__menu-btn {
@@ -189,8 +199,10 @@
     margin-bottom: 13px;
   }
 
-  .nav__logo img {
-    width: 203px;
+  .nav__logo {
+    img {
+      width: 203px;
+    }
   }
 
   .nav__menu-btn {

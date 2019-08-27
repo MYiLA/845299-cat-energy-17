@@ -40,9 +40,11 @@
   display: flex;
   align-items: center;
 
-  &:hover .footer__icon,
-  &:focus .footer__icon {
-    fill: $green;
+  &:hover,
+  &:focus {
+    .footer__icon {
+      fill: $green;
+    }
   }
 
   &:active {

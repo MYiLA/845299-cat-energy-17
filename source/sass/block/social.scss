@@ -26,13 +26,17 @@
   width: 22px;
   height: 22px;
 
-  &:hover .social__icon,
-  &:focus .social__icon {
-    fill: $green;
+  &:hover,
+  &:focus {
+    .social__icon {
+      fill: $green;
+    }
   }
 
-  &:active .social__icon {
-    opacity: 0.3;
+  &:active {
+    .social__icon {
+      opacity: 0.3;
+    }
   }
 }
 

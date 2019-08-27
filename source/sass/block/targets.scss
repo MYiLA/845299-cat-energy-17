@@ -23,64 +23,64 @@
   @include title ($size:24px, $line:37px);
   color: $gray-font-design;
   text-transform: uppercase;
-}
 
-.targets__title--slim {
-  position: relative;
+  &--slim {
+    position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 49px;
-    left: 2px;
-    top: 47%;
-    transform: translateY(-50%);
-    background-image: url("../../img/icon-cat-slim.svg");
-    background-position: 50%, 50%;
-    background-repeat: no-repeat;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 49px;
+      left: 2px;
+      top: 47%;
+      transform: translateY(-50%);
+      background-image: url("../../img/icon-cat-slim.svg");
+      background-position: 50%, 50%;
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 3px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      background-color: $green;
+    }
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 3px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    background-color: $green;
-  }
-}
+  &--plump {
+    position: relative;
+    margin-bottom: 23px;
 
-.targets__title--plump {
-  position: relative;
-  margin-bottom: 23px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 67px;
+      height: 28px;
+      left: -7px;
+      top: 56%;
+      transform: translateY(-50%);
+      background-image: url("../../img/icon-cat-pro.svg");
+      background-position: 50%, 50%;
+      background-repeat: no-repeat;
+    }
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 67px;
-    height: 28px;
-    left: -7px;
-    top: 56%;
-    transform: translateY(-50%);
-    background-image: url("../../img/icon-cat-pro.svg");
-    background-position: 50%, 50%;
-    background-repeat: no-repeat;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 2px;
-    top: 57%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    background-color: $green;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 2px;
+      top: 57%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      background-color: $green;
+    }
   }
 }
 
@@ -149,33 +149,33 @@
     position: static;
     padding: 0;
     margin-bottom: 25px;
-  }
 
-  .targets__title--slim,
-  .targets__title--plump {
-    &::before {
-      width: 200px;
-      height: 200px;
-      left: 63%;
-      top: 52%;
+    &--slim,
+    &--plump {
+      &::before {
+        width: 200px;
+        height: 200px;
+        left: 63%;
+        top: 52%;
+      }
     }
-  }
 
-  .targets__title--slim {
-    &::after {
-      width: 139px;
-      height: 200px;
-      left: 67%;
-      top: 47%;
+    &--slim {
+      &::after {
+        width: 139px;
+        height: 200px;
+        left: 67%;
+        top: 47%;
+      }
     }
-  }
 
-  .targets__title--plump {
-    &::after {
-      width: 267px;
-      height: 118px;
-      left: 58%;
-      top: 51%;
+    &--plump {
+      &::after {
+        width: 267px;
+        height: 118px;
+        left: 58%;
+        top: 51%;
+      }
     }
   }
 
@@ -183,10 +183,10 @@
     @include font-main ($size:16px, $line:24px);
     margin-bottom: 57px;
     width: 375px;
-  }
 
-  .targets__desc--tablet {
-    width: 343px;
+    &--tablet {
+      width: 343px;
+    }
   }
 
   .targets__link {
@@ -227,32 +227,32 @@
     position: relative;
     padding-left: 160px;
     margin-bottom: 74px;
-  }
 
-  .targets__title--slim,
-  .targets__title--plump {
-    &::before {
-      width: 100px;
-      height: 100px;
-      left: 0;
+    &--slim,
+    &--plump {
+      &::before {
+        width: 100px;
+        height: 100px;
+        left: 0;
+      }
     }
-  }
 
-  .targets__title--slim {
-    &::after {
-      width: 70px;
-      height: 97px;
-      left: 15px;
-      top: 15px;
+    &--slim {
+      &::after {
+        width: 70px;
+        height: 97px;
+        left: 15px;
+        top: 15px;
+      }
     }
-  }
 
-  .targets__title--plump {
-    &::after {
-      width: 134px;
-      height: 56px;
-      left: -20px;
-      top: 22px;
+    &--plump {
+      &::after {
+        width: 134px;
+        height: 56px;
+        left: -20px;
+        top: 22px;
+      }
     }
   }
 

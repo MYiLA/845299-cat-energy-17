@@ -284,11 +284,11 @@
     text-align: right;
 
     @include title ($size:20px, $line:20px);
-  }
 
-  .before-after__price span {
-    display: block;
-    padding-top: 8px;
+    span {
+      display: block;
+      padding-top: 8px;
+    }
   }
 
   .before-after__wrap-slider {
@@ -311,29 +311,29 @@
     top: -3px;
     overflow: hidden;
     width: 50%;
-  }
 
-  .before-after__img--before {
-    left: 0;
-    width: 48%;
-  }
+    img {
+      height: 100%;
+      max-width: none;
+      position: absolute;
+    }
 
-  .before-after__img--after {
-    right: 15px;
-  }
+    &--before {
+      left: 0;
+      width: 48%;
 
-  .before-after__img--before img {
-    left: 0;
-  }
+      img {
+        left: 0;
+      }
+    }
 
-  .before-after__img--after img {
-    right: 0;
-  }
+    &--after {
+      right: 15px;
 
-  .before-after__img img {
-    height: 100%;
-    max-width: none;
-    position: absolute;
+      img {
+        right: 0;
+      }
+    }
   }
 
   .before-after__controls {
@@ -452,10 +452,10 @@
     width: 327px;
 
     @include flex-between;
-  }
 
-  .before-after__price span {
-    padding-top: 0;
+    span {
+      padding-top: 0;
+    }
   }
 
   .before-after__wrap-slider {
@@ -472,16 +472,16 @@
 
   .before-after__img {
     margin-bottom: 45px;
-  }
 
-  .before-after__img--before {
-    left: -67px;
-    width: 63%;
-  }
+    &--before {
+      left: -67px;
+      width: 63%;
+    }
 
-  .before-after__img--after {
-    right: -41px;
-    width: 56%;
+    &--after {
+      right: -41px;
+      width: 56%;
+    }
   }
 
   .before-after__controls {
