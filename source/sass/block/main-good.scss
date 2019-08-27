@@ -49,13 +49,11 @@
 
 .main-good__table-name {
   padding: 0;
-  margin: 0;
   margin-left: auto;
 }
 
 .main-good__table-quantity {
   padding: 0;
-  margin: 0;
   text-align: right;
   margin-right: auto;
 }
@@ -71,10 +69,10 @@
     width: 324px;
     height: 100%;
     margin: 0;
-    padding-top: 129px;
+    padding-top: 131px;
     padding-bottom: 38px;
     padding-left: 38px;
-    padding-right: 38px;
+    padding-right: 37px;
     justify-content: center;
     position: relative;
     background-color: $background-color;
@@ -110,7 +108,7 @@
 
   .main-good__table {
     width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
     border-collapse: collapse;
   }
 
@@ -121,12 +119,12 @@
 
   .main-good__table-name {
     padding-top: 7px;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
   }
 
   .main-good__table-quantity {
     padding-top: 7px;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
   }
 }
 

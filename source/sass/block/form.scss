@@ -42,7 +42,7 @@
 .form__wrap {
   @include flex-between;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   position: relative;
   flex-wrap: nowrap;
 
@@ -96,7 +96,7 @@
 }
 
 .form__wrap-desktop {
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 }
 
 .form__label {
@@ -223,6 +223,10 @@
   @include green-title;
   margin-bottom: 34px;
   padding-right: 18px;
+
+  &--checkbox {
+    margin-bottom: 37px;
+  }
 }
 
 .form__input-textarea {
@@ -476,7 +480,7 @@
 //_________DESKTOP___________/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width: $desktop-width) {
   .form {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
 
   .form__title {
