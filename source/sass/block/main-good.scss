@@ -43,7 +43,6 @@
 }
 
 .main-good__table-row {
-  @include flex-between;
   @include font-main ($size:12px, $line:16px);
   color: $gray-font-main;
 }
@@ -51,13 +50,14 @@
 .main-good__table-name {
   padding: 0;
   margin: 0;
-  text-align: left;
+  margin-left: auto;
 }
 
 .main-good__table-quantity {
   padding: 0;
   margin: 0;
   text-align: right;
+  margin-right: auto;
 }
 
 .main-good__btn {
