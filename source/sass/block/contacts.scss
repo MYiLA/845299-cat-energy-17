@@ -12,6 +12,12 @@
   z-index: 1;
 }
 
+.contacts__wrap-desktop {
+  position: relative;
+  z-index: 1;
+  background-color: $white;
+}
+
 .contacts__wrap-gray {
   background-color: $background-color;
 }
@@ -69,8 +75,9 @@
 //_________TABLET__________////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width: $tablet-width) {
   .contacts__wrap {
-    width: 100%;
-    margin: 0;
+    width: $tablet-width;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 40px;
     padding-bottom: 56px;
     padding-top: 66px;
@@ -114,6 +121,7 @@
   }
 
   .contacts__wrap-desktop {
+    @include wrap;
     padding-top: 92px;
     padding-bottom: 105px;
     background-color: transparent;

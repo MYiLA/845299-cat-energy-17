@@ -1,7 +1,6 @@
 .social {
   @include flex-between ($justify: center);
   @include list-reset;
-  width: 280px;
   padding-top: 22px;
   padding-right: 73px;
   padding-bottom: 8px;
@@ -44,10 +43,7 @@
 @media (min-width: $tablet-width) {
   .social {
     padding: 0;
-    width: 150px;
     border: none;
-    margin-right: auto;
-    margin-left: 147px;
   }
 
   .social__item {
@@ -68,9 +64,6 @@
 
 @media (min-width: $desktop-width) {
   .social {
-    width: 570px;
     border: none;
-    margin-right: 162px;
-    margin-left: 195px;
   }
 }

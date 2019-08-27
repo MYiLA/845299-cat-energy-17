@@ -7,6 +7,7 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.js"></script>
 </head>
 
 <body>
@@ -182,7 +183,8 @@
           <p class="before-after__price">Затраты на питание: <span>15 000 руб.</span></p>
         </div>
         <div class="before-after__wrap-slider">
-          <input class="visually-hidden before-after__toggle-before" type="radio" id="before" name="toggle-slider" checked>
+          <input class="visually-hidden before-after__toggle-before" type="radio" id="before" name="toggle-slider"
+            checked>
           <input class="visually-hidden before-after__toggle-after" type="radio" id="after" name="toggle-slider">
           <div class="before-after__slider">
             <figure class="before-after__img before-after__img--before">
@@ -223,7 +225,7 @@
   <footer class="footer">
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="wrap contacts__wrap-desktop">
+      <div class="contacts__wrap-desktop">
         <div class="contacts__wrap">
           <p class="contacts__title">
             приглашаем
@@ -258,44 +260,48 @@
       </div>
     </section>
     <div class="footer__wrap">
-      <a class="footer__logo" href="#">
-        <img src="img/logo-footer.svg" alt="Логотип «Cat Energy»" width="128" height="24">
-      </a>
-      <ul class="social">
-        <li class="social__item">
-          <a class="social__btn" href="#">
-            <svg class="social__icon" width="22" height="12" role="img" aria-labelledby="heading-vk" focusable="false">
-              <title id="heading-vk">Cat Energy во Вконтакте</title>
-              <use xlink:href="#icon-vk"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__btn" href="#">
-            <svg class="social__icon" width="17" height="17" role="img" aria-labelledby="heading-insta"
-              focusable="false">
-              <title id="heading-insta">Cat Energy в Инстаграмме</title>
-              <use xlink:href="#icon-insta"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__btn" href="#">
-            <svg class="social__icon" width="10" height="19" role="img" aria-labelledby="heading-fb" focusable="false">
-              <title id="heading-fb">Cat Energy в Фейсбуке</title>
-              <use xlink:href="#icon-fb"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-        <p class="footer__academy">HTML Academy</p>
-        <svg class="footer__icon" width="40" height="45" role="img" aria-labelledby="heading-academy"
-          focusable="false">
-          <title id="heading-academy">Перейти на страницу курса HTML и CSS уровень 2</title>
-          <use xlink:href="#icon-academy"></use>
-        </svg>
-      </a>
+      <div class="footer__wrap-flex">
+        <a class="footer__logo" href="#">
+          <img src="img/logo-footer.svg" alt="Логотип «Cat Energy»" width="128" height="24">
+        </a>
+        <ul class="footer__cocial social">
+          <li class="social__item">
+            <a class="social__btn" href="#">
+              <svg class="social__icon" width="22" height="12" role="img" aria-labelledby="heading-vk"
+                focusable="false">
+                <title id="heading-vk">Cat Energy во Вконтакте</title>
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__btn" href="#">
+              <svg class="social__icon" width="17" height="17" role="img" aria-labelledby="heading-insta"
+                focusable="false">
+                <title id="heading-insta">Cat Energy в Инстаграмме</title>
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__btn" href="#">
+              <svg class="social__icon" width="10" height="19" role="img" aria-labelledby="heading-fb"
+                focusable="false">
+                <title id="heading-fb">Cat Energy в Фейсбуке</title>
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <p class="footer__academy">HTML Academy</p>
+          <svg class="footer__icon" width="40" height="45" role="img" aria-labelledby="heading-academy"
+            focusable="false">
+            <title id="heading-academy">Перейти на страницу курса HTML и CSS уровень 2</title>
+            <use xlink:href="#icon-academy"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
   <script src="js/script.js"></script>
