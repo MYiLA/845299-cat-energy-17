@@ -76,6 +76,7 @@
 @media (min-width: $tablet-width) {
   .contacts__wrap {
     width: $tablet-width;
+    // width: auto;
     margin-left: auto;
     margin-right: auto;
     padding: 0 40px;
@@ -84,6 +85,8 @@
   }
 
   .contacts__wrap-desktop {
+    // padding: 0;
+    // margin: 0;
     background-color: $white;
   }
 
@@ -121,7 +124,10 @@
   }
 
   .contacts__wrap-desktop {
-    @include wrap;
+    position: relative;
+    width: $desktop-width;
+    padding-right: 40px;
+    padding-left: 40px;
     padding-top: 92px;
     padding-bottom: 105px;
     background-color: transparent;
