@@ -27,6 +27,7 @@
   &--slim {
     position: relative;
 
+<<<<<<< HEAD
     &::after {
       content: "";
       position: absolute;
@@ -39,6 +40,20 @@
       background-position: 50%, 50%;
       background-repeat: no-repeat;
     }
+=======
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 49px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../img/icon-cat-slim.svg");
+    background-position: 50%, 50%;
+    background-repeat: no-repeat;
+  }
+>>>>>>> origin
 
     &::before {
       content: "";
@@ -57,6 +72,7 @@
     position: relative;
     margin-bottom: 23px;
 
+<<<<<<< HEAD
     &::after {
       content: "";
       position: absolute;
@@ -69,6 +85,20 @@
       background-position: 50%, 50%;
       background-repeat: no-repeat;
     }
+=======
+  &::after {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 28px;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../img/icon-cat-pro.svg");
+    background-position: 50%, 50%;
+    background-repeat: no-repeat;
+  }
+>>>>>>> origin
 
     &::before {
       content: "";
@@ -111,8 +141,13 @@
     position: absolute;
     width: 24px;
     height: 11px;
+<<<<<<< HEAD
     background-image: url("../../img/icon-right-arrow-long.svg");
     left: 41%;
+=======
+    background-image: url("../img/icon-right-arrow-long.svg");
+    left: 120%;
+>>>>>>> origin
     top: 50%;
     transform: translateY(50%);
   }
@@ -121,7 +156,7 @@
   &:focus::after {
     width: 33px;
     height: 11px;
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
   &:active {
