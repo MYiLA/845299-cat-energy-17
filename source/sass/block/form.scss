@@ -12,7 +12,7 @@
   text-align: left;
 
   @include title ($size:36px, $line:60px);
-  color: $gray-font-design;
+  color: $font-dark;
 }
 
 .form__desc {
@@ -25,7 +25,7 @@
 
   @include title ($size:14px, $line:18px);
   text-transform: uppercase;
-  color: $gray-font-design;
+  color: $font-dark;
 }
 
 .form__form {
@@ -47,6 +47,7 @@
   flex-wrap: nowrap;
 
   &--flex {
+    display: block;
     padding-top: 6px;
     margin-bottom: 32px;
   }
@@ -125,7 +126,7 @@
   outline: none;
 
   @include title ($size:16px, $line:18px);
-  color: $gray-font-main;
+  color: $font-light;
   text-transform: uppercase;
 
   &::placeholder {
@@ -242,7 +243,7 @@
   outline: none;
 
   @include title ($size:16px, $line:18px);
-  color: $gray-font-main;
+  color: $font-light;
   text-transform: uppercase;
 
   &::placeholder {
@@ -314,7 +315,7 @@
   margin-bottom: 30px;
 
   @include font-main ($line:16px);
-  color: $gray-font-main;
+  color: $font-light;
 }
 
 //_________TABLET__________////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

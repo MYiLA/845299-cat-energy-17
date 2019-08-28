@@ -11,7 +11,7 @@
   padding-top: 13px;
 
   @include title ($size:36px, $line:60px);
-  color: $gray-font-design;
+  color: $font-dark;
 }
 
 .catalog__main-products {
@@ -34,6 +34,7 @@
   &--more {
     @include wrap-mobile;
     padding-top: 26px;
+    border-top: none;
   }
 }
 
@@ -53,7 +54,7 @@
 
   @include title ($size:16px, $line:20px);
   text-transform: uppercase;
-  color: $gray-font-design;
+  color: $font-dark;
 
   &::before {
     content: "";
@@ -86,7 +87,7 @@
   text-align: center;
 
   @include font-main ($size:12px, $line:16px);
-  color: $gray-font-main;
+  color: $font-light;
 }
 
 .catalog__event {
@@ -178,9 +179,7 @@
       padding-right: 39px;
       padding-bottom: 40px;
       border: $border-lite;
-      display: flex;
       align-items: stretch;
-      flex-direction: column;
     }
   }
 
@@ -214,7 +213,7 @@
     margin-bottom: 85px;
 
     @include font-main ($size:16px, $line:16px);
-    color: $gray-font-main;
+    color: $font-light;
   }
 
   .catalog__event {
@@ -277,6 +276,7 @@
 
     &--more {
       width: 245px;
+      padding-top: 55px;
     }
   }
 

@@ -245,7 +245,7 @@
   })();
 
   var setResolution = function (candidate, sizesattr) {
-    if (candidate.w) { // h = means height: || descriptor.type === 'h' do not handle yet...
+    if (candidate.w) { // h = means height: || descriptor.type === "h" do not handle yet...
       candidate.cWidth = pf.calcListLength(sizesattr || "100vw");
       candidate.res = candidate.w / candidate.cWidth;
     } else {

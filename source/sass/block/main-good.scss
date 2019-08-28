@@ -32,7 +32,7 @@
   text-align: left;
 
   @include title ($size:16px, $line:20px);
-  color: $gray-font-design;
+  color: $font-dark;
   text-transform: uppercase;
 }
 
@@ -44,7 +44,7 @@
 
 .main-good__table-row {
   @include font-main ($size:12px, $line:16px);
-  color: $gray-font-main;
+  color: $font-light;
 }
 
 .main-good__table-name {

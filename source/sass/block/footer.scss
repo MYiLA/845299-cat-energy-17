@@ -62,7 +62,7 @@
   text-align: left;
 
   @include font-main ($size:16px, $line:16px);
-  color: $gray-font-main;
+  color: $font-light;
 }
 
 @media (min-width: $tablet-width) {

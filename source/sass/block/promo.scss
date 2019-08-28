@@ -82,13 +82,13 @@
     padding-top: 42px;
     margin-bottom: 42px;
     text-align: left;
-    color: $black;
+    color: $font-dark;
   }
 
   .promo__slogan {
     @include title ($size:20px, $line:20px);
     text-align: left;
-    color: $black;
+    color: $font-dark;
     margin-bottom: 47px;
   }
 

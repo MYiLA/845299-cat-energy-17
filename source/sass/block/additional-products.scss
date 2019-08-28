@@ -53,7 +53,7 @@
   padding-bottom: 15px;
 
   @include font-main ($line:14px);
-  color: $gray-font-main;
+  color: $font-light;
 }
 
 .additional-products__price {
@@ -64,7 +64,7 @@
   padding-bottom: 15px;
 
   @include font-main ($line:14px);
-  color: $gray-font-main;
+  color: $font-light;
 }
 
 .additional-products__btn {

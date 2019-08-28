@@ -16,9 +16,14 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
+  &:hover,
+  &:focus {
+    background-color: rgb(94, 170, 47);
+  }
+
   &--gray {
     background-color: $background-color;
-    color: $gray-font-main;
+    color: $font-light;
 
     &:hover,
     &:focus {

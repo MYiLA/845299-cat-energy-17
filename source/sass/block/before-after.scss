@@ -15,7 +15,7 @@
   padding: 0;
 
   @include title ($size:36px, $line:60px);
-  color: $gray-font-design;
+  color: $font-dark;
 }
 
 .before-after__desc {
@@ -26,7 +26,7 @@
   padding: 0;
 
   @include font-main;
-  color: $gray-font-main;
+  color: $font-light;
 }
 
 .before-after__container {
@@ -61,7 +61,7 @@
 
   @include title;
   text-transform: uppercase;
-  color: $gray-font-design;
+  color: $font-dark;
 }
 
 .before-after__sub-desc {
@@ -74,7 +74,7 @@
   background-color: $background-color;
 
   @include font-main ($size:12px, $line:12px);
-  color: $gray-font-main;
+  color: $font-light;
 }
 
 .before-after__price {
@@ -86,7 +86,7 @@
 
   @include title ($size:14px, $line:20px);
   text-transform: uppercase;
-  color: $gray-font-design;
+  color: $font-dark;
 }
 
 .before-after__slider {
@@ -136,7 +136,7 @@
   @include title ($size:16px, $line:20px);
 
   text-transform: uppercase;
-  color: $gray-font-design;
+  color: $font-dark;
   cursor: pointer;
 }
 
